@@ -1,0 +1,11 @@
+def print_row(df, key):
+    print("key:", key)
+    print("iskonawa_sentence:\t", df.loc[df['key'] == key, 'iskonawa_sentence'].values[0])
+    print("suffix_sentence:\t", df.loc[df['key'] == key, 'suffix_sentence'].values[0])
+    print("spanish_sentence:\t", df.loc[df['key'] == key, 'spanish_sentence'].values[0])
+    print("annotated_sentence:\t", df.loc[df['key'] == key, 'annotated_sentence'].values[0])
+    print(f'\t"{key}":', "{")
+    print('\t\t"verb_abbreviations":\t', df.loc[df['key'] == key, 'verb_abbreviations'].values[0], ",")
+    print('\t\t"iskonawa_verb_segmented":\t', df.loc[df['key'] == key, 'iskonawa_verb_segmented'].values[0], ",")
+    print('\t\t"spanish_verbs":\t', df.loc[df['key'] == key, 'spanish_verbs'].values[0])
+    print("\t},")

@@ -1,0 +1,106 @@
+[
+  {
+    "index": "87",
+    "iskonawa_sentence": "eah ni mena kai",
+    "suffix_sentence": "eah ni  mena-n ka-i",
+    "annotated_sentence": "1SG.S monte dentro ir-IMPF",
+    "spanish_sentence": "Yo voy al monte",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "88",
+    "iskonawa_sentence": "eah ni menan kai",
+    "suffix_sentence": "eah ni  mena-n ka-i",
+    "annotated_sentence": "1SG.S monte dentro-DIR ir-IMPF",
+    "spanish_sentence": "Yo voy al monte",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "89",
+    "iskonawa_sentence": "eah ni mahkata kai",
+    "suffix_sentence": "eah ni  mahkata-n ka-i",
+    "annotated_sentence": "1SG.S monte en-DIR ir-IMPF",
+    "spanish_sentence": "Yo voy al monte",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "90",
+    "iskonawa_sentence": "eah ni mahkatan kai",
+    "suffix_sentence": "eah ni mahkata-n ka-i",
+    "annotated_sentence": "1SG.S monte en-DIR ir-IMPF",
+    "spanish_sentence": "Yo voy al monte",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "106",
+    "iskonawa_sentence": "ena Juanita metsomi",
+    "suffix_sentence": "ena Juanita.ABS me-tsomi-i",
+    "annotated_sentence": "1SG.A Juanita mano-pellizcar-IMPF",
+    "spanish_sentence": "Yo pellizco a Juanita en la mano",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "116",
+    "iskonawa_sentence": "micha irabonin ea oina",
+    "suffix_sentence": "micha irabo-nin ea oin-a",
+    "annotated_sentence": "feo varón-ERG 1SG.P ver-PERF",
+    "spanish_sentence": "El hombre feo me miró",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "165",
+    "iskonawa_sentence": "Pablitonin ea o aka aiamakarana",
+    "suffix_sentence": "Pablito-nin ea oaka aia-ma-karan-a",
+    "annotated_sentence": "Pablito-ERG 1SG.P huaca tomar-CAU-MAL-PERF",
+    "spanish_sentence": "Pablito me hizo tomar huaca (para hacerme daño)",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "166",
+    "iskonawa_sentence": "Pablitonin o aka aiarana",
+    "suffix_sentence": "Pablito-nin oaka aia-aran-a",
+    "annotated_sentence": "Pablito-ERG huaca tomar-MAL-PERF",
+    "spanish_sentence": "Pablito tomó huaca (para hacerse daño)",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "167",
+    "iskonawa_sentence": "Pablitonin ewen bake ea o aka aiamakarana",
+    "suffix_sentence": "Pablito-nin ewen bake ea oaka aia-ma-karan-a",
+    "annotated_sentence": "Pablito-ERG 1SG.GEN hijo 1SG.P huaca tomar-CAU-MAL-PERF",
+    "spanish_sentence": "Pablito me le hizo tomar huaca a mi hijo (para hacerme daño)",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "215",
+    "iskonawa_sentence": "Ma ati kahe mena unibo hecho makoin ikebetan tankara pipaiyantankin nobo chifa piyantana",
+    "suffix_sentence": "ma ati kahe mena oni-bo hechoma-koin i-kebetan tankara pi-pai-yantan-kin nobo chifa pi-yantan-a",
+    "annotated_sentence": "ya restaurant dentro gente-PLU bastante-verdadero ser-SUJ.DIF gallina comer-DES-PAS.ayer-S/A>A 1PL chifa comer-PAS.ayer-PERF",
+    "spanish_sentence": "Como el restaurante estaba lleno, en lugar de comer pollo, ayer hemos comido chifa",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "251",
+    "iskonawa_sentence": "Atsa yamasa",
+    "suffix_sentence": "atsa yama-s-a",
+    "annotated_sentence": "yuca NEG-cero-EST",
+    "spanish_sentence": "No hay yuca",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "285",
+    "iskonawa_sentence": "Marlonbrando maati namama, na misho ka oari ka",
+    "suffix_sentence": "Marlonbrando maati namá-ma na misho ka oa-ri ka-a",
+    "annotated_sentence": "Marlonbrando.ABS cocina dentro-NEG este gato.ABS TOP.CON donde-FOC ir-PERF",
+    "spanish_sentence": "Marlonbrando no está dentro de la cocina, ¿a dónde se fue este gato?",
+    "reference": "17375911/7XWQXF6G"
+  },
+  {
+    "index": "1a",
+    "iskonawa_sentence": "Ana yawa pichai",
+    "suffix_sentence": "A-na yawa picha-i",
+    "annotated_sentence": "3sg-ERG sachavaca cocinar-IMPF",
+    "spanish_sentence": "Él/ella cocina la sachavaca",
+    "reference": "17375911/GSDUJ7ZH"
+  }
+]
