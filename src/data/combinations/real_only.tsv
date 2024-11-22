@@ -1,179 +1,160 @@
 pi	pia	V;PFV
 pi	pimai	V;IPFV;NEG
-pi	pikinkin	V;PAS.REM.HAB;ASOC
+pi	pikin	V;PAS.REM.HAB;ASOC
 pi	pishina	V;PFV;PST.days
-pi	pipai	V;IPFV
-pi	piarana	V;PFV;MAL
-pi	pimisa	V;PFV;HAB_A
-pi	pipisi	V;IPFV
+pi	piaran	V;PFV;MAL
+pi	pimisa	V;HAB_A;PFV
 pi	piyantana	V;PFV;PST.yesterday
-pi	pishina	V;PST.days
-pi	pikitsi	V;DES;REF.S/A>S
+pi	pikitsi iki	V;DES;REF.S/A>S
 pi	piberana	V;PFV;MOV.VEN
 pi	pipiberana	V;PFV;MOV.VEN
-pi	pibaina	V;PFV;MOV.ANDA
-pi	pipibaina	V;PFV;MOV.ANDA
-pi	pibokona	V;PFV;MOV.around
+pi	pibaina	V;TR;PFV;MOV.ANDA
+pi	pipibaina	V;TR;PFV;MOV.ANDA
+pi	pibokona	V;TR;PFV;MOV.around
 pi	pikawana	V;PFV;MOV.passing
 pi	pipakea	V;PFV;MOV.down
 pi	pipatansi	V;IPFV;MOV.ITER
 pi	pibota	V;PFV;MOV.DUR
 pi	pitana	V;PFV;MOV.goto
-pi	pitoshia	V;PFV;MOV.goto
+pi	pitoshia	V;PFV;MOV.arrive
 pi	pimashina	V;PST.days;NEG
 pi	pikeana	V;PFV;NEG.FRUS
 pi	pipaoni	V;PST.REM
-pi	pipani	V;IPFV
 pi	pimakin	V;IMP;NEG
-pi	piah	V;REF.S/A>S
-pi	peshtei	V;IPFV
+pi	piah	V;INTR;REF.S/A>S
 pi	pipaiyantankin	V;PST.yesterday;DES
 kai	kai	V;IPFV
-kai	kahun	V;REF.S/A>A
-kai	kaisi	V;IPFV;PRG
+kai	kahon	V;TR;REF.S/A>A
+kai	kaisi	V;PRG;IPFV
 kai	kanonkota	V;FUT.INM
 kai	karabea	V;PFV;DUAL
-kai	bokani	V;IPFV;PL
-kai	kakin	V;REF.S/A>A
-kai	katsa	V;POT
+kai	kakin	V;TR;REF.S/A>A
+kats	katsa	V;EST
 kai	ka	V;PFV
 kai	kahakoa	V;PFV;DIM
 oini	oina	V;PFV
-oini	oins oinsi	V;IPFV;HAB_A
+oini	oins oinsi	V;HAB_A;IPFV
 oini	oini	V;IPFV
 oini	oinah	V;REF.S/A>S
 oini	oins oinsi	V;IPFV
 oini	oini	V;REF.S/A>S
-oini	oinmakin	V;TR;CAUS
-aki	akaibi	V;ENF
+oini	oinmakin	V;TR;CAU
 aki	akian	V;PFV;ASOC
-aki	akabi	V;ENF
 aki	aka	V;PFV
-aki	akhona	V;PFV;BEN
+aki	ahona	V;PFV;BEN
 aki	aki iki	V;IPFV;REF.S/A>S
 aki	apaoni	V;PST.REM
 aki	ayohma	V;NEG.yet
-aki	akin	V;REF.S/A>A
+aki	akin	V;TR;REF.S/A>A
 aki	apaonike	V;PST.REM
 aki	aki	V;IPFV
 aki	akin	V;TR
 ohai	ohai	V;IPFV
 ohai	ohmai	V;IPFV;CAU
 ohai	ohamis	V;HAB_A
-ohai	ohatoshia	V;PFV
-ohai	ohai kai	V;IPFV;REF.S/A>S
+ohai	ohai kai	V;IPFV;FUT.INM;REF.S/A>S
 ohai	ohabirai	V;IPFV;DUB
 ohai	ohakoinsi kai	V;IPFV;ASER;REF.S/A>S
-ohai	ohakatsi	V;DES;REF.S/A>S
+ohai	ohakatsi iki	V;DES;REF.S/A>S
 ohai	ohahakoa	V;PFV;DIM
-ohai	ohakerana	V;PFV;MOV.VEN
-ohai	ohakaina	V;PFV;MOV.ANDA
+ohai	ohakerana	V;INTR;PFV;MOV.VEN
+ohai	ohakaina	V;INTR;PFV;MOV.ANDA
 ohai	ohaina	V;PFV;MOV.up
-choki	chokikerana	V;PFV;MOV.VEN
+choki	chokikerana	V;INTR;PFV;MOV.VEN
 choki	choki	V;IPFV
 choki	chukikini	V;IPFV;ASOC
-choki	chokai	V;IPFV
-choki	choronakea	V;PFV;MOV.around
-choki	choronkawana	V;PFV;MOV.passing
-choki	choronpakea	V;PFV;MOV.down
-choki	choki chokitani	V;IPFV
-choki	pechoki pechokitani	V;IPFV
+chokai	chokai	V;IPFV
+choron	choronakea	V;INTR;PFV;MOV.around
+choron	choronkawana	V;PFV;MOV.passing
+choron	choronpakea	V;PFV;MOV.down
 ayai	aia	V;PFV
-ayai	ayaaranhakoa	V;PFV;MAL;DIM
+ayai	ayaaranhakoa	V;PFV;DIM;MAL
 ayai	ayaina	V;PFV;MOV.up
 ayai	ayayamashina	V;PST.days;NEG
 ayai	ayayohma	V;NEG.never
 ayai	ayai	V;IPFV
-ayai	aiamakarana	V;PFV;MAL;CAU
+ayai	aiamakarana	V;PFV;CAU;MAL
 ayai	aiarana	V;PFV;MAL
 rete	retea	V;PFV
-rete	ahon	V;REF.S/A>A
-rete	marepakea	V;PFV
 senwei	senwea	V;PFV
-senwei	senweberana	V;PFV;MOV.VEN
-senwei	senweraberana	V;PFV;MOV.VEN;MAL
-senwei	senweanana	V;PFV;REC
+senwei	senweberana	V;TR;PFV;MOV.VEN
+senwei	senweraberana	V;TR;PFV;MOV.VEN;MAL
+senwei	senweanan	V;PFV;REC
 oi	oa	V;PFV
 oi	oah	V;REF.S/A>S
-oi	oai	V;IPFV
-yamasa	yamasa	V;POT;PRG
-yamasa	yamasa ishina	V;POT;PST.days;NEG
-yamasa	yamasa	V;POT;NEG
+oi	oi	V;IPFV
+yama	yamasa	V;PRG;EST
+yamasa	yamasa ishina	V;EST;PST.days;NEG
+yamasa	yamasa	V;EST;NEG
 nokoi	nokoa	V;PFV
 ewea	ewea	V;PFV
 ewea	ewe eweri	V;PST.yet
 ewea	eweniah	V;PST.REM;REF.S/A>S
-ewea	ewehenia	V;PAS.REM.DUR;PST.REM;MOV.DUR
+ewea	ewehenia	V;PFV;PAS.REM.DUR
 beni beni ik	beni beni iki	V;IPFV
 beni beni ik	beni beni ia	V;PFV
-beni beni ik	beni beni ima	V;PFV;CAUS
+beni beni ik	beni beni ima	V;PFV;CAU
 mini	mini	V;IPFV
-mini	kai	V;IPFV
 mini	minia	V;PFV
 kesai	kesai	V;IPFV
 kesai	kesayamai	V;IPFV;NEG
 kesai	kesa	V;PFV
 metsinki	metsinki	V;IPFV
-iki	ishina	V;PST.days
+iki	ishina	V;PFV;PST.days
 iki	iki	V;IPFV
-iki	ihon	V;REF.S/A>A
+iki	ihon	V;TR;REF.S/A>A
 mehoi	mehoa	V;PFV
 sawei	saweai	V;IPFV
-sawei	saweribiai	V;IPFV
-wai aki	waianaka	V;POT;HAB_M
+wai aki	waianaka	V;EST;HAB_M
 wai aki	wai aka	V;PFV
-pakei	pakei	V;PFV
-pakei	nikimai	V;CAUS
-pakei	pakemai	V;CAUS
+pakei	pakei	V;IPFV
+pakei	pakemai	V;IPFV;CAU
 yoi	yoi	V;IPFV
-yoi	yoiribia	V;PFV
 poi	poi	V;IPFV
-achi	meachia	V;PFV
-banai	banahon	V;REF.S/A>A
+achi	achiabo	V;PFV;PL
+banai	banahon	V;TR;REF.S/A>A
 banai	banabai	V;PST.DUR
-banai	banashina	V;PST.days
+banai	banashina	V;PFV;PST.days
 mabain	mabain	V;IPFV
 kiwi	kiwa	V;PFV
 kiwi	kiwi	V;IPFV
 hohoi	hohoa	V;PFV
 hohoi	hohoi	V;IPFV
 bi	bia	V;PFV
-bi	bikehon	V;TR
-bi	achiabo	V;PL
 ratei	ratehekoni	V;PST.REM;DIM
 ratei	ratehekoi	V;IPFV;DIM
 beni	benia	V;PFV
-paear	paena	V;PFV
+paear	paean	V;PFV
 otsia	otsina	V;PFV
 otsia	otsima	V;PFV;CAU
-pichain	nanehon	V;REF.S/A>A
+nane	nanehon	V;TR;REF.S/A>A
 pichain	pichai	V;IPFV
-noia	noikoinsi	V;IPFV;HAB_A;ENF
+noia	noikoinsi	V;HAB_A;IPFV;ENF
 noia	noia	V;PFV
 kenai	kena	V;PFV
 bei	bea	V;PFV
-boi	boankatsi	V;DES;REF.S/A>S
+boi	boankatsi iki	V;DES;REF.S/A>S
 boi	boanrana	V;MAL
+boi	bokani	V;IPFV;PL
 moin	moa	V;PFV
 tewe tewe iki	tewe tewe iki	V;IPFV
 shinain	shinananpaoni	V;PST.REM;REC
 manai	manai	V;IPFV
 tsekai	tsekake	V;PFV
-tsomi	metsomi	V;IPFV
-rani	rania	V;POT
-yoishiki	yoishika	V;POT
-bewa	bewa	V;POT
+rani	rania	V;EST
+yoishiki	yoishika	V;EST
+bewa	bewa	V;EST
 pian aki	pian aka	V;PFV
-rakai	rakabotana	V;POT;PL
-potai	potapakea	V;PFV
+rakai	rakabotana	V;EST;PL
+potai	potapakea	V;PFV;MOV.down
 heai	hea	V;PFV
-mehai	mehanaka	V;POT;HAB_M
+mehai	mehanaka	V;EST;HAB_M
 heri heri iki	heri heri iki	V;IPFV
 pari pari iki	pari	V;IPFV
 imatai	imatai	V;IPFV
 inai	inai	V;PFV
-iná aki	inahon	V;REF.S/A>A
-ni	nishina	V;PST.days
+iná aki	inahon	V;TR;REF.S/A>A
+ni	nishina	V;PFV;PST.days
 achimai	achimai	V;IPFV;CAU
-mahkai	mahkakoana	V;PFV;NEG.FRUS
+mahkai	mahkakoana	V;INTR;PFV;NEG.FRUS
 neai	nea	V;PFV
