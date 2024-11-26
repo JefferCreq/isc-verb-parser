@@ -1,0 +1,9 @@
+{
+  "hidden_size": 256,
+  "max_position_embeddings": 512,
+  "model_type": "seq2seq",
+  "num_attention_heads": 8,
+  "num_hidden_layers": 6,
+  "transformers_version": "4.46.2",
+  "vocab_size": 49
+}
