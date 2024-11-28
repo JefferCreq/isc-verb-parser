@@ -1,0 +1,2796 @@
+## x10
+
+Real Data:  (160, 3)
+Synthetic Data:  (1600, 3)
+Real and Synthetic Data:  (1760, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+
+
+# Modelo: google/flan-t5-base #
+model_name:  google/flan-t5-base
+model_name_dir:  google_flan-t5-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+tokenizer_config.json: 100%
+ 2.54k/2.54k [00:00<00:00, 190kB/s]
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 28.2MB/s]
+tokenizer.json: 100%
+ 2.42M/2.42M [00:04<00:00, 531kB/s]
+special_tokens_map.json: 100%
+ 2.20k/2.20k [00:00<00:00, 165kB/s]
+config.json: 100%
+ 1.40k/1.40k [00:00<00:00, 123kB/s]
+model.safetensors: 100%
+ 990M/990M [00:04<00:00, 247MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 11.7kB/s]
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Entrenando el modelo...
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+wandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit: ··········
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241123_004934-j8uydbzp
+Syncing run ./results/google_flan-t5-base/synthetic_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/j8uydbzp
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+ [1800/1800 10:03, Epoch 20/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.069500	1.317076	0.018750	4.681250
+2	0.743400	0.673884	0.018750	4.493750
+3	0.636800	0.514494	0.056250	4.243750
+4	0.512300	0.401726	0.187500	3.418750
+5	0.406200	0.323362	0.287500	2.637500
+6	0.330200	0.263022	0.487500	1.912500
+7	0.311700	0.228622	0.568750	1.625000
+8	0.271900	0.211657	0.606250	1.343750
+9	0.215000	0.195683	0.643750	1.262500
+10	0.186100	0.192450	0.675000	1.000000
+11	0.186300	0.183575	0.662500	1.043750
+12	0.193700	0.177345	0.668750	0.975000
+13	0.191400	0.172866	0.687500	0.868750
+14	0.162100	0.166506	0.693750	0.893750
+15	0.138500	0.164466	0.706250	0.875000
+16	0.147400	0.164731	0.731250	0.756250
+17	0.146400	0.161659	0.718750	0.800000
+18	0.163900	0.159948	0.743750	0.693750
+19	0.183300	0.158919	0.743750	0.700000
+20	0.145400	0.158396	0.737500	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 0.6111589670181274, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 2.5438, 'test_samples_per_second': 62.897, 'test_steps_per_second': 3.931}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1800/1800 09:57, Epoch 20/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.069500	1.317076	0.018750	4.681250
+2	0.743400	0.673884	0.018750	4.493750
+3	0.636800	0.514494	0.056250	4.243750
+4	0.512300	0.401726	0.187500	3.418750
+5	0.406200	0.323362	0.287500	2.637500
+6	0.330200	0.263022	0.487500	1.912500
+7	0.311700	0.228622	0.568750	1.625000
+8	0.271900	0.211657	0.606250	1.343750
+9	0.215000	0.195683	0.643750	1.262500
+10	0.186100	0.192450	0.675000	1.000000
+11	0.186300	0.183575	0.662500	1.043750
+12	0.193700	0.177345	0.668750	0.975000
+13	0.191400	0.172866	0.687500	0.868750
+14	0.162100	0.166506	0.693750	0.893750
+15	0.138500	0.164466	0.706250	0.875000
+16	0.147400	0.164731	0.731250	0.756250
+17	0.146400	0.161659	0.718750	0.800000
+18	0.163900	0.159948	0.743750	0.693750
+19	0.183300	0.158919	0.743750	0.700000
+20	0.145400	0.158396	0.737500	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 0.6111589670181274, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 2.4953, 'test_samples_per_second': 64.12, 'test_steps_per_second': 4.008}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1800/1800 10:52, Epoch 20/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.069500	1.317076	0.018750	4.681250
+2	0.743400	0.673884	0.018750	4.493750
+3	0.636800	0.514494	0.056250	4.243750
+4	0.512300	0.401726	0.187500	3.418750
+5	0.406200	0.323362	0.287500	2.637500
+6	0.330200	0.263022	0.487500	1.912500
+7	0.311700	0.228622	0.568750	1.625000
+8	0.271900	0.211657	0.606250	1.343750
+9	0.215000	0.195683	0.643750	1.262500
+10	0.186100	0.192450	0.675000	1.000000
+11	0.186300	0.183575	0.662500	1.043750
+12	0.193700	0.177345	0.668750	0.975000
+13	0.191400	0.172866	0.687500	0.868750
+14	0.162100	0.166506	0.693750	0.893750
+15	0.138500	0.164466	0.706250	0.875000
+16	0.147400	0.164731	0.731250	0.756250
+17	0.146400	0.161659	0.718750	0.800000
+18	0.163900	0.159948	0.743750	0.693750
+19	0.183300	0.158919	0.743750	0.700000
+20	0.145400	0.158396	0.737500	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 0.6111589670181274, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 2.6746, 'test_samples_per_second': 59.821, 'test_steps_per_second': 3.739}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1800/1800 16:09, Epoch 20/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.069500	1.317076	0.018750	4.681250
+2	0.743400	0.673884	0.018750	4.493750
+3	0.636800	0.514494	0.056250	4.243750
+4	0.512300	0.401726	0.187500	3.418750
+5	0.406200	0.323362	0.287500	2.637500
+6	0.330200	0.263022	0.487500	1.912500
+7	0.311700	0.228622	0.568750	1.625000
+8	0.271900	0.211657	0.606250	1.343750
+9	0.215000	0.195683	0.643750	1.262500
+10	0.186100	0.192450	0.675000	1.000000
+11	0.186300	0.183575	0.662500	1.043750
+12	0.193700	0.177345	0.668750	0.975000
+13	0.191400	0.172866	0.687500	0.868750
+14	0.162100	0.166506	0.693750	0.893750
+15	0.138500	0.164466	0.706250	0.875000
+16	0.147400	0.164731	0.731250	0.756250
+17	0.146400	0.161659	0.718750	0.800000
+18	0.163900	0.159948	0.743750	0.693750
+19	0.183300	0.158919	0.743750	0.700000
+20	0.145400	0.158396	0.737500	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 0.6111589670181274, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 2.6259, 'test_samples_per_second': 60.931, 'test_steps_per_second': 3.808}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1800/1800 12:54, Epoch 20/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.069500	1.317076	0.018750	4.681250
+2	0.743400	0.673884	0.018750	4.493750
+3	0.636800	0.514494	0.056250	4.243750
+4	0.512300	0.401726	0.187500	3.418750
+5	0.406200	0.323362	0.287500	2.637500
+6	0.330200	0.263022	0.487500	1.912500
+7	0.311700	0.228622	0.568750	1.625000
+8	0.271900	0.211657	0.606250	1.343750
+9	0.215000	0.195683	0.643750	1.262500
+10	0.186100	0.192450	0.675000	1.000000
+11	0.186300	0.183575	0.662500	1.043750
+12	0.193700	0.177345	0.668750	0.975000
+13	0.191400	0.172866	0.687500	0.868750
+14	0.162100	0.166506	0.693750	0.893750
+15	0.138500	0.164466	0.706250	0.875000
+16	0.147400	0.164731	0.731250	0.756250
+17	0.146400	0.161659	0.718750	0.800000
+18	0.163900	0.159948	0.743750	0.693750
+19	0.183300	0.158919	0.743750	0.700000
+20	0.145400	0.158396	0.737500	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 0.6111589670181274, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 2.6053, 'test_samples_per_second': 61.413, 'test_steps_per_second': 3.838}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1372/1960 12:50 < 05:30, 1.78 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.231400	1.222858	0.023121	4.427746
+2	0.721100	0.670170	0.017341	4.098266
+3	0.566200	0.501433	0.138728	3.502890
+4	0.466200	0.402477	0.277457	2.930636
+5	0.389000	0.328119	0.416185	2.150289
+6	0.318500	0.284679	0.526012	1.751445
+7	0.291200	0.255763	0.543353	1.612717
+8	0.215200	0.236862	0.664740	1.104046
+9	0.215500	0.218352	0.670520	1.156069
+10	0.232900	0.216793	0.647399	1.173410
+11	0.204500	0.208013	0.699422	0.809249
+12	0.184500	0.209682	0.705202	0.855491
+13	0.161000	0.207502	0.682081	0.843931
+14	0.183700	0.206065	0.699422	0.745665
+Evaluando después de fine-tuning...
+{'test_loss': 0.46008870005607605, 'test_exact_match': 0.5625, 'test_mean_levenshtein': 1.40625, 'test_runtime': 0.5179, 'test_samples_per_second': 61.792, 'test_steps_per_second': 3.862}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1568/1960 09:21 < 02:20, 2.79 it/s, Epoch 16/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.140800	1.182758	0.023121	4.479769
+2	0.718300	0.661056	0.034682	4.034682
+3	0.571200	0.507229	0.115607	3.618497
+4	0.475400	0.416498	0.248555	3.115607
+5	0.396700	0.329747	0.381503	2.329480
+6	0.334900	0.278077	0.531792	1.936416
+7	0.275400	0.243620	0.589595	1.514451
+8	0.234900	0.223275	0.676301	1.341040
+9	0.228400	0.207758	0.676301	1.248555
+10	0.215100	0.202050	0.693642	1.063584
+11	0.215100	0.187939	0.693642	1.005780
+12	0.185800	0.192236	0.693642	0.959538
+13	0.166800	0.186210	0.710983	0.884393
+14	0.193400	0.186896	0.716763	0.843931
+15	0.192500	0.183355	0.722543	0.791908
+16	0.171600	0.176013	0.722543	0.693642
+Evaluando después de fine-tuning...
+{'test_loss': 0.4151911735534668, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 0.84375, 'test_runtime': 0.5732, 'test_samples_per_second': 55.831, 'test_steps_per_second': 3.489}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1372/1960 08:23 < 03:36, 2.72 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.188700	1.218092	0.017341	4.520231
+2	0.718000	0.682152	0.023121	4.161850
+3	0.564000	0.516808	0.115607	3.641618
+4	0.458900	0.421418	0.231214	3.179191
+5	0.400600	0.345083	0.358382	2.456647
+6	0.328500	0.299233	0.514451	1.976879
+7	0.287500	0.262271	0.595376	1.352601
+8	0.221600	0.236522	0.658960	1.265896
+9	0.215800	0.219491	0.670520	1.115607
+10	0.218000	0.215704	0.653179	1.208092
+11	0.217000	0.202186	0.682081	0.965318
+12	0.178400	0.204572	0.682081	0.849711
+13	0.153800	0.198000	0.682081	0.890173
+14	0.195500	0.195936	0.687861	0.884393
+Evaluando después de fine-tuning...
+{'test_loss': 0.5162976384162903, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 1.6875, 'test_runtime': 0.6575, 'test_samples_per_second': 48.672, 'test_steps_per_second': 3.042}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1470/1960 16:20 < 05:27, 1.50 it/s, Epoch 15/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.176000	1.218194	0.034682	4.479769
+2	0.732600	0.677144	0.040462	4.011561
+3	0.572600	0.511811	0.138728	3.520231
+4	0.451400	0.407272	0.294798	2.947977
+5	0.393000	0.328617	0.421965	2.138728
+6	0.318600	0.288558	0.566474	1.780347
+7	0.278900	0.258752	0.583815	1.514451
+8	0.222700	0.240249	0.676301	1.190751
+9	0.216900	0.225004	0.693642	1.179191
+10	0.217700	0.221559	0.664740	1.306358
+11	0.211900	0.211854	0.687861	1.109827
+12	0.193400	0.210247	0.716763	0.895954
+13	0.170900	0.207865	0.699422	0.994220
+14	0.195900	0.209074	0.682081	1.080925
+15	0.153100	0.205125	0.687861	0.942197
+Evaluando después de fine-tuning...
+{'test_loss': 0.6992315053939819, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 1.4375, 'test_runtime': 0.605, 'test_samples_per_second': 52.892, 'test_steps_per_second': 3.306}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1568/1960 21:53 < 05:28, 1.19 it/s, Epoch 16/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	2.162300	1.202298	0.017341	4.514451
+2	0.718600	0.685127	0.028902	4.040462
+3	0.568800	0.529498	0.115607	3.728324
+4	0.454800	0.429087	0.254335	3.225434
+5	0.392900	0.350845	0.375723	2.358382
+6	0.320500	0.301890	0.526012	2.017341
+7	0.279100	0.268405	0.549133	1.734104
+8	0.224100	0.248086	0.682081	1.265896
+9	0.213200	0.227504	0.682081	1.219653
+10	0.226000	0.228230	0.670520	1.184971
+11	0.219500	0.217576	0.705202	0.924855
+12	0.185200	0.217909	0.710983	0.838150
+13	0.172900	0.210059	0.739884	0.763006
+14	0.182400	0.208901	0.722543	0.774566
+15	0.154800	0.206094	0.705202	0.820809
+16	0.171100	0.201786	0.728324	0.705202
+Evaluando después de fine-tuning...
+{'test_loss': 0.6180862188339233, 'test_exact_match': 0.375, 'test_mean_levenshtein': 1.21875, 'test_runtime': 0.5991, 'test_samples_per_second': 53.413, 'test_steps_per_second': 3.338}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold5.csv
+
+
+
+
+# Modelo: facebook/bart-base #
+model_name:  facebook/bart-base
+model_name_dir:  facebook_bart-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+config.json: 100%
+ 1.72k/1.72k [00:00<00:00, 150kB/s]
+vocab.json: 100%
+ 899k/899k [00:00<00:00, 1.92MB/s]
+merges.txt: 100%
+ 456k/456k [00:00<00:00, 695kB/s]
+tokenizer.json: 100%
+ 1.36M/1.36M [00:01<00:00, 845kB/s]
+model.safetensors: 100%
+ 558M/558M [00:02<00:00, 242MB/s]
+Entrenando el modelo...
+ [ 990/1800 05:05 < 04:10, 3.23 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.770200	0.692217	0.043750	4.887500
+2	0.420500	0.339520	0.318750	2.556250
+3	0.260500	0.224098	0.568750	1.393750
+4	0.170900	0.219883	0.662500	0.912500
+5	0.121600	0.198567	0.662500	0.962500
+6	0.082000	0.197492	0.693750	0.850000
+7	0.094400	0.192255	0.725000	0.843750
+8	0.084100	0.196698	0.737500	0.800000
+9	0.052100	0.204639	0.718750	0.831250
+10	0.055800	0.198472	0.737500	0.856250
+11	0.040400	0.202879	0.743750	0.750000
+Evaluando después de fine-tuning...
+{'test_loss': 0.7619533538818359, 'test_exact_match': 0.41875, 'test_mean_levenshtein': 1.53125, 'test_runtime': 2.25, 'test_samples_per_second': 71.112, 'test_steps_per_second': 4.445}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 990/1800 04:39 < 03:49, 3.53 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.770200	0.692217	0.043750	4.887500
+2	0.420500	0.339520	0.318750	2.556250
+3	0.260500	0.224098	0.568750	1.393750
+4	0.170900	0.219883	0.662500	0.912500
+5	0.121600	0.198567	0.662500	0.962500
+6	0.082000	0.197492	0.693750	0.850000
+7	0.094400	0.192255	0.725000	0.843750
+8	0.084100	0.196698	0.737500	0.800000
+9	0.052100	0.204639	0.718750	0.831250
+10	0.055800	0.198472	0.737500	0.856250
+11	0.040400	0.202879	0.743750	0.750000
+Evaluando después de fine-tuning...
+{'test_loss': 0.7619533538818359, 'test_exact_match': 0.41875, 'test_mean_levenshtein': 1.53125, 'test_runtime': 2.2598, 'test_samples_per_second': 70.803, 'test_steps_per_second': 4.425}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 990/1800 02:58 < 02:26, 5.54 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.770200	0.692217	0.043750	4.887500
+2	0.420500	0.339520	0.318750	2.556250
+3	0.260500	0.224098	0.568750	1.393750
+4	0.170900	0.219883	0.662500	0.912500
+5	0.121600	0.198567	0.662500	0.962500
+6	0.082000	0.197492	0.693750	0.850000
+7	0.094400	0.192255	0.725000	0.843750
+8	0.084100	0.196698	0.737500	0.800000
+9	0.052100	0.204639	0.718750	0.831250
+10	0.055800	0.198472	0.737500	0.856250
+11	0.040400	0.202879	0.743750	0.750000
+Evaluando después de fine-tuning...
+{'test_loss': 0.7619533538818359, 'test_exact_match': 0.41875, 'test_mean_levenshtein': 1.53125, 'test_runtime': 2.2802, 'test_samples_per_second': 70.169, 'test_steps_per_second': 4.386}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 990/1800 03:14 < 02:39, 5.08 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.770200	0.692217	0.043750	4.887500
+2	0.420500	0.339520	0.318750	2.556250
+3	0.260500	0.224098	0.568750	1.393750
+4	0.170900	0.219883	0.662500	0.912500
+5	0.121600	0.198567	0.662500	0.962500
+6	0.082000	0.197492	0.693750	0.850000
+7	0.094400	0.192255	0.725000	0.843750
+8	0.084100	0.196698	0.737500	0.800000
+9	0.052100	0.204639	0.718750	0.831250
+10	0.055800	0.198472	0.737500	0.856250
+11	0.040400	0.202879	0.743750	0.750000
+Evaluando después de fine-tuning...
+{'test_loss': 0.7619533538818359, 'test_exact_match': 0.41875, 'test_mean_levenshtein': 1.53125, 'test_runtime': 2.2796, 'test_samples_per_second': 70.186, 'test_steps_per_second': 4.387}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 990/1800 05:13 < 04:17, 3.15 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.770200	0.692217	0.043750	4.887500
+2	0.420500	0.339520	0.318750	2.556250
+3	0.260500	0.224098	0.568750	1.393750
+4	0.170900	0.219883	0.662500	0.912500
+5	0.121600	0.198567	0.662500	0.962500
+6	0.082000	0.197492	0.693750	0.850000
+7	0.094400	0.192255	0.725000	0.843750
+8	0.084100	0.196698	0.737500	0.800000
+9	0.052100	0.204639	0.718750	0.831250
+10	0.055800	0.198472	0.737500	0.856250
+11	0.040400	0.202879	0.743750	0.750000
+Evaluando después de fine-tuning...
+{'test_loss': 0.7619533538818359, 'test_exact_match': 0.41875, 'test_mean_levenshtein': 1.53125, 'test_runtime': 2.1871, 'test_samples_per_second': 73.155, 'test_steps_per_second': 4.572}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1078/1960 03:50 < 03:09, 4.67 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.914700	0.686956	0.040462	4.312139
+2	0.465800	0.359098	0.317919	2.514451
+3	0.262500	0.216301	0.641618	1.028902
+4	0.188700	0.184525	0.699422	0.855491
+5	0.115100	0.162419	0.722543	0.780347
+6	0.125100	0.174962	0.739884	0.693642
+7	0.088700	0.158337	0.734104	0.722543
+8	0.061500	0.165279	0.791908	0.589595
+9	0.041600	0.161819	0.768786	0.624277
+10	0.032700	0.168826	0.745665	0.658960
+11	0.033300	0.168685	0.739884	0.595376
+Evaluando después de fine-tuning...
+{'test_loss': 0.5651574730873108, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 1.21875, 'test_runtime': 0.4619, 'test_samples_per_second': 69.284, 'test_steps_per_second': 4.33}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1078/1960 03:02 < 02:29, 5.89 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.869700	0.667453	0.040462	4.156069
+2	0.482600	0.345069	0.294798	2.820809
+3	0.287900	0.207528	0.618497	1.109827
+4	0.191100	0.176151	0.658960	1.080925
+5	0.138800	0.160846	0.751445	0.786127
+6	0.116500	0.178079	0.751445	0.768786
+7	0.090100	0.159763	0.728324	0.763006
+8	0.063400	0.158413	0.768786	0.826590
+9	0.040200	0.154879	0.774566	0.606936
+10	0.037500	0.156988	0.763006	0.705202
+11	0.037000	0.162262	0.780347	0.589595
+Evaluando después de fine-tuning...
+{'test_loss': 0.6299740076065063, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.0625, 'test_runtime': 0.4726, 'test_samples_per_second': 67.71, 'test_steps_per_second': 4.232}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 784/1960 02:11 < 03:18, 5.92 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.873200	0.683719	0.034682	4.329480
+2	0.452100	0.349810	0.341040	2.346821
+3	0.245800	0.215105	0.658960	0.959538
+4	0.175700	0.179461	0.693642	0.976879
+5	0.117500	0.180162	0.745665	0.867052
+6	0.119800	0.177344	0.751445	0.653179
+7	0.092200	0.182946	0.745665	0.757225
+8	0.058200	0.165208	0.745665	0.722543
+Evaluando después de fine-tuning...
+{'test_loss': 0.7567318081855774, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.375, 'test_runtime': 0.4536, 'test_samples_per_second': 70.54, 'test_steps_per_second': 4.409}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1666/1960 04:57 < 00:52, 5.59 it/s, Epoch 17/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.949700	0.684585	0.046243	4.202312
+2	0.451900	0.373140	0.335260	2.537572
+3	0.274800	0.222291	0.658960	0.803468
+4	0.190000	0.216549	0.693642	0.832370
+5	0.121200	0.207644	0.687861	0.953757
+6	0.115300	0.191129	0.716763	0.780347
+7	0.094800	0.184558	0.745665	0.780347
+8	0.059300	0.184068	0.763006	0.705202
+9	0.045500	0.176342	0.745665	0.745665
+10	0.030400	0.184803	0.745665	0.786127
+11	0.033300	0.182078	0.786127	0.601156
+12	0.037900	0.177113	0.763006	0.751445
+13	0.026100	0.177737	0.774566	0.618497
+14	0.020400	0.177827	0.797688	0.647399
+15	0.023200	0.177158	0.786127	0.572254
+16	0.009100	0.189121	0.780347	0.543353
+17	0.021900	0.177198	0.786127	0.601156
+Evaluando después de fine-tuning...
+{'test_loss': 0.9949975609779358, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 2.0, 'test_runtime': 0.4853, 'test_samples_per_second': 65.937, 'test_steps_per_second': 4.121}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 784/1960 02:12 < 03:18, 5.92 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.879200	0.680458	0.034682	4.335260
+2	0.447000	0.354726	0.364162	2.213873
+3	0.277100	0.217246	0.647399	0.947977
+4	0.179500	0.197098	0.705202	0.971098
+5	0.133500	0.181620	0.751445	0.803468
+6	0.116500	0.194465	0.745665	0.699422
+7	0.087200	0.184508	0.739884	0.757225
+8	0.058800	0.183630	0.745665	0.751445
+Evaluando después de fine-tuning...
+{'test_loss': 0.5770372152328491, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.5, 'test_runtime': 0.4855, 'test_samples_per_second': 65.914, 'test_steps_per_second': 4.12}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold5.csv
+
+
+
+# Modelo: facebook/mbart-large-50-many-to-many-mmt #
+tokenizer_config.json: 100%
+ 529/529 [00:00<00:00, 43.3kB/s]
+config.json: 100%
+ 1.43k/1.43k [00:00<00:00, 124kB/s]
+sentencepiece.bpe.model: 100%
+ 5.07M/5.07M [00:00<00:00, 77.5MB/s]
+special_tokens_map.json: 100%
+ 649/649 [00:00<00:00, 58.9kB/s]
+model.safetensors: 100%
+ 2.44G/2.44G [00:10<00:00, 217MB/s]
+generation_config.json: 100%
+ 261/261 [00:00<00:00, 22.4kB/s]
+
+### Combinación: real_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+wandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit: ··········
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241127_100123-fhga1knx
+Syncing run ./results/facebook_mbart-large-50-many-to-many-mmt/real_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/fhga1knx
+ [ 48/160 03:00 < 07:19, 0.25 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	5.186922	0.153846	3.538462
+2	6.679100	4.631688	0.153846	3.307692
+3	4.365000	3.917429	0.230769	3.384615
+4	3.065700	3.351553	0.153846	2.923077
+5	1.762900	2.553237	0.076923	2.923077
+6	1.762900	2.183174	0.076923	2.692308
+Evaluando después de fine-tuning...
+{'test_loss': 3.8810391426086426, 'test_exact_match': 0.09375, 'test_mean_levenshtein': 3.5, 'test_runtime': 0.5741, 'test_samples_per_second': 55.74, 'test_steps_per_second': 3.484}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 32/160 07:47 < 33:16, 0.06 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	2.438183	0.153846	3.615385
+2	2.653300	1.924272	0.076923	3.846154
+3	1.117200	1.873650	0.076923	4.384615
+4	0.475100	1.931574	0.076923	4.153846
+Evaluando después de fine-tuning...
+{'test_loss': 2.1678683757781982, 'test_exact_match': 0.15625, 'test_mean_levenshtein': 2.8125, 'test_runtime': 0.6396, 'test_samples_per_second': 50.028, 'test_steps_per_second': 3.127}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 32/160 13:33 < 57:52, 0.04 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	1.699286	0.076923	3.769231
+2	1.471000	1.651150	0.000000	3.615385
+3	0.530300	1.843361	0.000000	3.384615
+4	0.309000	1.946621	0.076923	2.923077
+Evaluando después de fine-tuning...
+{'test_loss': 1.0267102718353271, 'test_exact_match': 0.3125, 'test_mean_levenshtein': 2.75, 'test_runtime': 0.5606, 'test_samples_per_second': 57.082, 'test_steps_per_second': 3.568}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 32/160 13:47 < 58:51, 0.04 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	1.148097	0.153846	2.230769
+2	0.800800	1.387350	0.153846	3.000000
+3	0.403900	1.127262	0.153846	2.230769
+4	0.255900	1.237324	0.153846	2.230769
+Evaluando después de fine-tuning...
+{'test_loss': 0.8034496307373047, 'test_exact_match': 0.3125, 'test_mean_levenshtein': 2.78125, 'test_runtime': 0.5789, 'test_samples_per_second': 55.277, 'test_steps_per_second': 3.455}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 32/160 11:22 < 48:33, 0.04 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	0.631862	0.307692	2.846154
+2	0.661000	0.782799	0.230769	2.692308
+3	0.328700	0.763305	0.230769	2.230769
+4	0.188500	0.859431	0.230769	2.538462
+Evaluando después de fine-tuning...
+{'test_loss': 0.5120119452476501, 'test_exact_match': 0.34375, 'test_mean_levenshtein': 2.09375, 'test_runtime': 0.6041, 'test_samples_per_second': 52.975, 'test_steps_per_second': 3.311}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_only_fold5.csv
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1260/1800 56:53 < 24:25, 0.37 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.408600	0.448827	0.531250	1.312500
+2	0.226000	0.383421	0.568750	1.387500
+3	0.148600	0.413428	0.606250	1.306250
+4	0.099200	0.411354	0.625000	0.918750
+5	0.063000	0.414564	0.625000	1.031250
+6	0.034700	0.449854	0.637500	1.237500
+7	0.027000	0.443611	0.612500	1.150000
+8	0.008300	0.453169	0.618750	1.212500
+9	0.007500	0.436791	0.650000	1.175000
+10	0.003000	0.444786	0.625000	1.218750
+11	0.001800	0.464165	0.668750	1.062500
+12	0.004100	0.460252	0.631250	1.212500
+13	0.003000	0.472096	0.662500	1.212500
+14	0.002700	0.473311	0.650000	1.268750
+Evaluando después de fine-tuning...
+{'test_loss': 0.8014190793037415, 'test_exact_match': 0.5125, 'test_mean_levenshtein': 1.05625, 'test_runtime': 3.0122, 'test_samples_per_second': 53.118, 'test_steps_per_second': 3.32}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 360/1800 17:55 < 1:12:07, 0.33 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.030400	0.495893	0.631250	0.925000
+2	0.030800	0.494433	0.637500	1.181250
+3	0.039700	0.497719	0.631250	1.018750
+4	0.006400	0.498541	0.606250	1.412500
+Evaluando después de fine-tuning...
+{'test_loss': 0.9379762411117554, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.4125, 'test_runtime': 3.0656, 'test_samples_per_second': 52.193, 'test_steps_per_second': 3.262}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 540/1800 27:25 < 1:04:14, 0.33 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.036000	0.511456	0.618750	1.225000
+2	0.023700	0.539065	0.581250	1.312500
+3	0.016400	0.525733	0.643750	1.087500
+4	0.011100	0.514812	0.593750	1.356250
+5	0.003400	0.531979	0.625000	1.275000
+6	0.004400	0.511385	0.593750	1.312500
+Evaluando después de fine-tuning...
+{'test_loss': 1.043722152709961, 'test_exact_match': 0.425, 'test_mean_levenshtein': 1.45625, 'test_runtime': 3.0456, 'test_samples_per_second': 52.535, 'test_steps_per_second': 3.283}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 990/1800 39:48 < 32:38, 0.41 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.013200	0.523603	0.618750	1.231250
+2	0.011100	0.550875	0.568750	1.468750
+3	0.009700	0.562079	0.643750	1.200000
+4	0.007700	0.519457	0.562500	1.475000
+5	0.003700	0.560781	0.643750	1.218750
+6	0.012400	0.532292	0.662500	0.956250
+7	0.017500	0.559919	0.637500	1.131250
+8	0.011100	0.551354	0.681250	1.062500
+9	0.002000	0.571605	0.656250	1.168750
+10	0.000200	0.560370	0.656250	1.112500
+11	0.001300	0.556496	0.656250	1.150000
+Evaluando después de fine-tuning...
+{'test_loss': 1.135716438293457, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 1.3875, 'test_runtime': 3.1801, 'test_samples_per_second': 50.312, 'test_steps_per_second': 3.145}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 360/1800 17:49 < 1:11:42, 0.33 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.017400	0.585619	0.631250	1.312500
+2	0.020700	0.584686	0.625000	1.162500
+3	0.013300	0.521291	0.606250	1.331250
+4	0.007000	0.506726	0.625000	1.256250
+Evaluando después de fine-tuning...
+{'test_loss': 1.1530389785766602, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.525, 'test_runtime': 3.183, 'test_samples_per_second': 50.267, 'test_steps_per_second': 3.142}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [ 686/1960 29:25 < 54:48, 0.39 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.092500	0.171503	0.786127	0.595376
+2	0.031600	0.197946	0.768786	0.612717
+3	0.010700	0.179834	0.809249	0.410405
+4	0.016300	0.177092	0.843931	0.404624
+5	0.001400	0.201475	0.820809	0.485549
+6	0.012500	0.196617	0.797688	0.462428
+7	0.014400	0.206054	0.803468	0.543353
+Evaluando después de fine-tuning...
+{'test_loss': 0.683975875377655, 'test_exact_match': 0.625, 'test_mean_levenshtein': 1.21875, 'test_runtime': 0.6016, 'test_samples_per_second': 53.189, 'test_steps_per_second': 3.324}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 392/1960 15:47 < 1:03:28, 0.41 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.012300	0.177173	0.820809	0.404624
+2	0.025100	0.191959	0.803468	0.485549
+3	0.016500	0.187734	0.820809	0.508671
+4	0.018600	0.195932	0.826590	0.462428
+Evaluando después de fine-tuning...
+{'test_loss': 0.30919742584228516, 'test_exact_match': 0.8125, 'test_mean_levenshtein': 0.3125, 'test_runtime': 0.5856, 'test_samples_per_second': 54.642, 'test_steps_per_second': 3.415}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 882/1960 36:44 < 45:00, 0.40 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.015700	0.210758	0.768786	0.520231
+2	0.026100	0.227489	0.774566	0.664740
+3	0.018100	0.205327	0.786127	0.566474
+4	0.014700	0.230731	0.820809	0.462428
+5	0.001100	0.221020	0.780347	0.520231
+6	0.020500	0.239687	0.849711	0.375723
+7	0.005900	0.222683	0.843931	0.427746
+8	0.002300	0.218259	0.815029	0.520231
+9	0.004600	0.215087	0.838150	0.497110
+Evaluando después de fine-tuning...
+{'test_loss': 0.22945308685302734, 'test_exact_match': 0.8125, 'test_mean_levenshtein': 0.34375, 'test_runtime': 0.6117, 'test_samples_per_second': 52.311, 'test_steps_per_second': 3.269}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 392/1960 14:29 < 58:17, 0.45 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.009700	0.247713	0.815029	0.491329
+2	0.006300	0.286147	0.791908	0.583815
+3	0.012500	0.275961	0.768786	0.624277
+4	0.003700	0.284533	0.745665	0.710983
+Evaluando después de fine-tuning...
+{'test_loss': 0.07766003161668777, 'test_exact_match': 0.875, 'test_mean_levenshtein': 0.6875, 'test_runtime': 0.5724, 'test_samples_per_second': 55.906, 'test_steps_per_second': 3.494}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 588/1960 25:50 < 1:00:30, 0.38 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.004500	0.228121	0.797688	0.601156
+2	0.010000	0.273739	0.763006	0.676301
+3	0.026600	0.259076	0.815029	0.497110
+4	0.007700	0.268937	0.757225	0.612717
+5	0.008500	0.268214	0.791908	0.583815
+6	0.009100	0.273804	0.757225	0.658960
+Evaluando después de fine-tuning...
+{'test_loss': 0.12608933448791504, 'test_exact_match': 0.90625, 'test_mean_levenshtein': 0.15625, 'test_runtime': 0.623, 'test_samples_per_second': 51.367, 'test_steps_per_second': 3.21}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold5.csv
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	facebook_mbart-large-50-many-to-many-mmt	real_only	0.24375	2.78750
+1	facebook_mbart-large-50-many-to-many-mmt	synthetic_only	0.45625	1.36750
+2	facebook_mbart-large-50-many-to-many-mmt	real_plus_synthetic	0.80625	0.54375
+
+
+
+## x20 ##
+
+
+Real Data:  (160, 3)
+Synthetic Data:  (3200, 3)
+Real and Synthetic Data:  (3360, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+
+
+# Modelo: google/flan-t5-base #
+model_name:  google/flan-t5-base
+model_name_dir:  google_flan-t5-base
+
+### Combinación: real_only ###
+
+Procesando pliegue 1
+tokenizer_config.json: 100%
+ 2.54k/2.54k [00:00<00:00, 189kB/s]
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 28.6MB/s]
+tokenizer.json: 100%
+ 2.42M/2.42M [00:00<00:00, 3.67MB/s]
+special_tokens_map.json: 100%
+ 2.20k/2.20k [00:00<00:00, 169kB/s]
+config.json: 100%
+ 1.40k/1.40k [00:00<00:00, 129kB/s]
+model.safetensors: 100%
+ 990M/990M [00:04<00:00, 238MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 11.4kB/s]
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Entrenando el modelo...
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+wandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit: ··········
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241122_024148-r76n2gay
+Syncing run ./results/google_flan-t5-base/real_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/r76n2gay
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+ [ 40/160 00:49 < 02:35, 0.77 it/s, Epoch 5/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	15.769252	0.153846	4.153846
+2	22.472600	11.347141	0.230769	3.923077
+3	14.426600	6.723571	0.230769	3.538462
+4	9.215100	5.449971	0.230769	3.461538
+5	5.990200	4.672984	0.230769	3.076923
+Evaluando después de fine-tuning...
+{'test_loss': 12.305471420288086, 'test_exact_match': 0.0625, 'test_mean_levenshtein': 5.875, 'test_runtime': 0.7138, 'test_samples_per_second': 44.831, 'test_steps_per_second': 2.802}
+Predicciones guardadas en predictions_google_flan-t5-base_real_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 40/160 00:50 < 02:40, 0.75 it/s, Epoch 5/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	14.785815	0.076923	3.923077
+2	21.352400	10.966811	0.153846	3.923077
+3	14.389600	6.803110	0.153846	4.000000
+4	9.290400	5.321826	0.153846	3.846154
+5	5.911400	4.568522	0.153846	3.461538
+Evaluando después de fine-tuning...
+{'test_loss': 13.00007438659668, 'test_exact_match': 0.09375, 'test_mean_levenshtein': 4.6875, 'test_runtime': 0.7103, 'test_samples_per_second': 45.052, 'test_steps_per_second': 2.816}
+Predicciones guardadas en predictions_google_flan-t5-base_real_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 32/160 01:48 < 07:42, 0.28 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	16.079353	0.000000	6.538462
+2	21.980900	11.703469	0.000000	4.923077
+3	14.336400	7.657955	0.000000	4.461538
+4	10.124100	5.814447	0.000000	3.692308
+Evaluando después de fine-tuning...
+{'test_loss': 15.534027099609375, 'test_exact_match': 0.15625, 'test_mean_levenshtein': 5.78125, 'test_runtime': 0.9436, 'test_samples_per_second': 33.912, 'test_steps_per_second': 2.12}
+Predicciones guardadas en predictions_google_flan-t5-base_real_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 32/160 05:19 < 22:43, 0.09 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	10.490123	0.153846	2.384615
+2	21.791600	8.405150	0.076923	2.692308
+3	14.655200	6.182608	0.076923	2.307692
+4	9.245200	5.038197	0.076923	2.230769
+Evaluando después de fine-tuning...
+{'test_loss': 14.996427536010742, 'test_exact_match': 0.0625, 'test_mean_levenshtein': 5.9375, 'test_runtime': 0.9085, 'test_samples_per_second': 35.224, 'test_steps_per_second': 2.201}
+Predicciones guardadas en predictions_google_flan-t5-base_real_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 56/160 10:39 < 20:30, 0.08 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	15.855165	0.076923	3.538462
+2	21.672700	11.419608	0.076923	3.769231
+3	14.913300	7.311852	0.076923	3.076923
+4	9.493600	5.126929	0.153846	2.923077
+5	6.076400	4.495135	0.076923	2.846154
+6	6.076400	3.807581	0.076923	2.615385
+7	4.921900	3.088321	0.153846	2.538462
+Evaluando después de fine-tuning...
+{'test_loss': 5.517871379852295, 'test_exact_match': 0.1875, 'test_mean_levenshtein': 3.125, 'test_runtime': 0.3668, 'test_samples_per_second': 87.241, 'test_steps_per_second': 5.453}
+Predicciones guardadas en predictions_google_flan-t5-base_real_only_fold5.csv
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1980/3600 23:22 < 19:08, 1.41 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.711562	0.031250	3.846875
+2	0.513100	0.438900	0.228125	2.912500
+3	0.345700	0.298046	0.490625	1.737500
+4	0.278000	0.230576	0.675000	1.012500
+5	0.222800	0.204706	0.712500	0.825000
+6	0.184400	0.184408	0.793750	0.531250
+7	0.158400	0.167978	0.796875	0.540625
+8	0.144400	0.167734	0.834375	0.396875
+9	0.134500	0.162610	0.828125	0.459375
+10	0.125000	0.155313	0.843750	0.415625
+11	0.145800	0.146475	0.846875	0.378125
+Evaluando después de fine-tuning...
+{'test_loss': 0.5789371728897095, 'test_exact_match': 0.55, 'test_mean_levenshtein': 1.15625, 'test_runtime': 2.5087, 'test_samples_per_second': 63.778, 'test_steps_per_second': 3.986}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1980/3600 11:57 < 09:47, 2.76 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.711562	0.031250	3.846875
+2	0.513100	0.438900	0.228125	2.912500
+3	0.345700	0.298046	0.490625	1.737500
+4	0.278000	0.230576	0.675000	1.012500
+5	0.222800	0.204706	0.712500	0.825000
+6	0.184400	0.184408	0.793750	0.531250
+7	0.158400	0.167978	0.796875	0.540625
+8	0.144400	0.167734	0.834375	0.396875
+9	0.134500	0.162610	0.828125	0.459375
+10	0.125000	0.155313	0.843750	0.415625
+11	0.145800	0.146475	0.846875	0.378125
+Evaluando después de fine-tuning...
+{'test_loss': 0.5789371728897095, 'test_exact_match': 0.55, 'test_mean_levenshtein': 1.15625, 'test_runtime': 2.5057, 'test_samples_per_second': 63.855, 'test_steps_per_second': 3.991}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1980/3600 09:20 < 07:38, 3.53 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.711562	0.031250	3.846875
+2	0.513100	0.438900	0.228125	2.912500
+3	0.345700	0.298046	0.490625	1.737500
+4	0.278000	0.230576	0.675000	1.012500
+5	0.222800	0.204706	0.712500	0.825000
+6	0.184400	0.184408	0.793750	0.531250
+7	0.158400	0.167978	0.796875	0.540625
+8	0.144400	0.167734	0.834375	0.396875
+9	0.134500	0.162610	0.828125	0.459375
+10	0.125000	0.155313	0.843750	0.415625
+11	0.145800	0.146475	0.846875	0.378125
+Evaluando después de fine-tuning...
+{'test_loss': 0.5789371728897095, 'test_exact_match': 0.55, 'test_mean_levenshtein': 1.15625, 'test_runtime': 2.5978, 'test_samples_per_second': 61.591, 'test_steps_per_second': 3.849}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1980/3600 09:18 < 07:37, 3.54 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.711562	0.031250	3.846875
+2	0.513100	0.438900	0.228125	2.912500
+3	0.345700	0.298046	0.490625	1.737500
+4	0.278000	0.230576	0.675000	1.012500
+5	0.222800	0.204706	0.712500	0.825000
+6	0.184400	0.184408	0.793750	0.531250
+7	0.158400	0.167978	0.796875	0.540625
+8	0.144400	0.167734	0.834375	0.396875
+9	0.134500	0.162610	0.828125	0.459375
+10	0.125000	0.155313	0.843750	0.415625
+11	0.145800	0.146475	0.846875	0.378125
+Evaluando después de fine-tuning...
+{'test_loss': 0.5789371728897095, 'test_exact_match': 0.55, 'test_mean_levenshtein': 1.15625, 'test_runtime': 2.5006, 'test_samples_per_second': 63.984, 'test_steps_per_second': 3.999}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1980/3600 09:31 < 07:47, 3.46 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.711562	0.031250	3.846875
+2	0.513100	0.438900	0.228125	2.912500
+3	0.345700	0.298046	0.490625	1.737500
+4	0.278000	0.230576	0.675000	1.012500
+5	0.222800	0.204706	0.712500	0.825000
+6	0.184400	0.184408	0.793750	0.531250
+7	0.158400	0.167978	0.796875	0.540625
+8	0.144400	0.167734	0.834375	0.396875
+9	0.134500	0.162610	0.828125	0.459375
+10	0.125000	0.155313	0.843750	0.415625
+11	0.145800	0.146475	0.846875	0.378125
+Evaluando después de fine-tuning...
+{'test_loss': 0.5789371728897095, 'test_exact_match': 0.55, 'test_mean_levenshtein': 1.15625, 'test_runtime': 2.5078, 'test_samples_per_second': 63.801, 'test_steps_per_second': 3.988}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [3008/3760 14:12 < 03:33, 3.53 it/s, Epoch 16/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777300	0.675949	0.018018	3.966967
+2	0.525300	0.414627	0.195195	3.012012
+3	0.340500	0.282794	0.522523	1.594595
+4	0.279100	0.221450	0.669670	1.042042
+5	0.182500	0.196383	0.732733	0.804805
+6	0.220600	0.178415	0.774775	0.648649
+7	0.143900	0.164823	0.774775	0.603604
+8	0.115200	0.163424	0.798799	0.498498
+9	0.138400	0.156573	0.801802	0.450450
+10	0.123000	0.149841	0.813814	0.441441
+11	0.156000	0.147531	0.816817	0.426426
+12	0.117700	0.147370	0.822823	0.399399
+13	0.121600	0.144212	0.843844	0.399399
+14	0.105400	0.147963	0.831832	0.435435
+15	0.106000	0.145181	0.834835	0.507508
+16	0.096000	0.140061	0.840841	0.426426
+Evaluando después de fine-tuning...
+{'test_loss': 0.4313269257545471, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.59375, 'test_runtime': 0.5493, 'test_samples_per_second': 58.251, 'test_steps_per_second': 3.641}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [3008/3760 14:21 < 03:35, 3.49 it/s, Epoch 16/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.774900	0.675765	0.024024	4.063063
+2	0.536700	0.406027	0.213213	3.039039
+3	0.336100	0.273699	0.504505	1.588589
+4	0.263600	0.212269	0.687688	0.954955
+5	0.188500	0.185889	0.747748	0.711712
+6	0.209800	0.169027	0.786787	0.576577
+7	0.164600	0.157254	0.795796	0.489489
+8	0.123500	0.152690	0.807808	0.423423
+9	0.142000	0.141075	0.819820	0.453453
+10	0.124100	0.131382	0.822823	0.456456
+11	0.147000	0.128986	0.840841	0.387387
+12	0.112100	0.127935	0.822823	0.471471
+13	0.136400	0.122958	0.855856	0.393393
+14	0.094100	0.124481	0.849850	0.429429
+15	0.108900	0.123438	0.837838	0.486486
+16	0.095500	0.118425	0.852853	0.408408
+Evaluando después de fine-tuning...
+{'test_loss': 0.463081955909729, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 0.96875, 'test_runtime': 0.5071, 'test_samples_per_second': 63.107, 'test_steps_per_second': 3.944}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [2068/3760 09:50 < 08:03, 3.50 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.777600	0.675165	0.036036	4.057057
+2	0.517700	0.409425	0.243243	2.855856
+3	0.348400	0.275821	0.501502	1.624625
+4	0.270200	0.210940	0.672673	0.951952
+5	0.190700	0.194606	0.711712	0.828829
+6	0.204400	0.174947	0.771772	0.588589
+7	0.150900	0.160910	0.789790	0.498498
+8	0.116600	0.156253	0.807808	0.432432
+9	0.149800	0.148904	0.813814	0.405405
+10	0.132700	0.143149	0.813814	0.429429
+11	0.157200	0.134020	0.816817	0.405405
+Evaluando después de fine-tuning...
+{'test_loss': 0.44530361890792847, 'test_exact_match': 0.65625, 'test_mean_levenshtein': 0.84375, 'test_runtime': 0.5795, 'test_samples_per_second': 55.216, 'test_steps_per_second': 3.451}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [2068/3760 09:51 < 08:04, 3.49 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.771700	0.663176	0.039039	4.018018
+2	0.515000	0.392634	0.255255	2.738739
+3	0.331800	0.268915	0.555556	1.336336
+4	0.270900	0.207991	0.684685	0.924925
+5	0.177900	0.189808	0.720721	0.792793
+6	0.201300	0.171496	0.747748	0.624625
+7	0.155700	0.162256	0.765766	0.555556
+8	0.123600	0.155825	0.798799	0.456456
+9	0.133300	0.149923	0.780781	0.483483
+10	0.121300	0.144355	0.807808	0.444444
+11	0.155800	0.135770	0.801802	0.492492
+Evaluando después de fine-tuning...
+{'test_loss': 0.7041491866111755, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 1.25, 'test_runtime': 0.5301, 'test_samples_per_second': 60.368, 'test_steps_per_second': 3.773}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1880/3760 08:55 < 08:56, 3.51 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.789900	0.682507	0.021021	4.036036
+2	0.550300	0.412709	0.234234	2.894895
+3	0.330800	0.274502	0.528529	1.492492
+4	0.276800	0.216367	0.675676	1.024024
+5	0.188600	0.195210	0.711712	0.795796
+6	0.228700	0.175859	0.756757	0.636637
+7	0.149200	0.168471	0.798799	0.474474
+8	0.118600	0.162828	0.807808	0.438438
+9	0.134200	0.151289	0.801802	0.456456
+10	0.131300	0.145211	0.810811	0.426426
+Evaluando después de fine-tuning...
+{'test_loss': 0.6072677969932556, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 1.09375, 'test_runtime': 0.5875, 'test_samples_per_second': 54.465, 'test_steps_per_second': 3.404}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold5.csv
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	real_only	0.11250	5.08125
+1	google_flan-t5-base	synthetic_only	0.55000	1.15625
+2	google_flan-t5-base	real_plus_synthetic	0.59375	0.95000
+
+
+
+
+# Modelo: facebook/bart-base #
+model_name:  facebook/bart-base
+model_name_dir:  facebook_bart-base
+
+### Combinación: real_only ###
+
+Procesando pliegue 1
+config.json: 100%
+ 1.72k/1.72k [00:00<00:00, 137kB/s]
+vocab.json: 100%
+ 899k/899k [00:00<00:00, 4.22MB/s]
+merges.txt: 100%
+ 456k/456k [00:00<00:00, 1.89MB/s]
+tokenizer.json: 100%
+ 1.36M/1.36M [00:01<00:00, 1.30MB/s]
+model.safetensors: 100%
+ 558M/558M [00:03<00:00, 222MB/s]
+Entrenando el modelo...
+ [ 32/160 00:18 < 01:18, 1.63 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	6.423554	0.230769	3.076923
+2	8.284800	4.792959	0.153846	3.076923
+3	5.472800	3.676062	0.153846	3.153846
+4	3.888800	3.097488	0.153846	3.153846
+Evaluando después de fine-tuning...
+{'test_loss': 5.863996982574463, 'test_exact_match': 0.1875, 'test_mean_levenshtein': 3.5625, 'test_runtime': 0.3815, 'test_samples_per_second': 83.871, 'test_steps_per_second': 5.242}
+Predicciones guardadas en predictions_facebook_bart-base_real_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [ 32/160 00:19 < 01:21, 1.56 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	7.076754	0.153846	3.384615
+2	7.099900	5.800450	0.153846	3.230769
+3	4.948500	4.153646	0.153846	3.230769
+4	3.672500	3.405742	0.153846	3.153846
+Evaluando después de fine-tuning...
+{'test_loss': 7.418503284454346, 'test_exact_match': 0.09375, 'test_mean_levenshtein': 3.3125, 'test_runtime': 0.3941, 'test_samples_per_second': 81.203, 'test_steps_per_second': 5.075}
+Predicciones guardadas en predictions_facebook_bart-base_real_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 32/160 02:01 < 08:37, 0.25 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	4.857270	0.000000	3.538462
+2	8.183400	3.890592	0.000000	3.384615
+3	5.773400	3.332148	0.000000	3.307692
+4	3.984600	2.845565	0.000000	3.461538
+Evaluando después de fine-tuning...
+{'test_loss': 5.68294620513916, 'test_exact_match': 0.25, 'test_mean_levenshtein': 2.84375, 'test_runtime': 0.3969, 'test_samples_per_second': 80.63, 'test_steps_per_second': 5.039}
+Predicciones guardadas en predictions_facebook_bart-base_real_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [ 32/160 03:05 < 13:12, 0.16 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	5.090224	0.230769	1.846154
+2	8.012900	4.011487	0.230769	1.846154
+3	5.547900	3.065766	0.153846	1.923077
+4	3.768400	2.642884	0.153846	1.923077
+Evaluando después de fine-tuning...
+{'test_loss': 5.897180080413818, 'test_exact_match': 0.125, 'test_mean_levenshtein': 3.75, 'test_runtime': 0.3396, 'test_samples_per_second': 94.239, 'test_steps_per_second': 5.89}
+Predicciones guardadas en predictions_facebook_bart-base_real_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 32/160 00:19 < 01:25, 1.51 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	No log	5.858840	0.153846	2.384615
+2	8.272700	4.512823	0.153846	2.384615
+3	5.784400	3.311222	0.153846	2.538462
+4	3.990500	2.675591	0.153846	2.692308
+Evaluando después de fine-tuning...
+{'test_loss': 6.092406272888184, 'test_exact_match': 0.21875, 'test_mean_levenshtein': 2.65625, 'test_runtime': 0.3388, 'test_samples_per_second': 94.451, 'test_steps_per_second': 5.903}
+Predicciones guardadas en predictions_facebook_bart-base_real_only_fold5.csv
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1620/3600 04:07 < 05:02, 6.54 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.499800	0.419174	0.221875	3.043750
+2	0.212700	0.188662	0.728125	0.700000
+3	0.118400	0.164191	0.784375	0.496875
+4	0.099500	0.151312	0.787500	0.537500
+5	0.093500	0.141711	0.800000	0.446875
+6	0.076000	0.138068	0.856250	0.381250
+7	0.079600	0.133713	0.853125	0.328125
+8	0.053500	0.132878	0.843750	0.453125
+9	0.032600	0.130860	0.865625	0.406250
+Evaluando después de fine-tuning...
+{'test_loss': 0.7209112048149109, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1375, 'test_runtime': 2.0274, 'test_samples_per_second': 78.917, 'test_steps_per_second': 4.932}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1620/3600 04:03 < 04:57, 6.66 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.499800	0.419174	0.221875	3.043750
+2	0.212700	0.188662	0.728125	0.700000
+3	0.118400	0.164191	0.784375	0.496875
+4	0.099500	0.151312	0.787500	0.537500
+5	0.093500	0.141711	0.800000	0.446875
+6	0.076000	0.138068	0.856250	0.381250
+7	0.079600	0.133713	0.853125	0.328125
+8	0.053500	0.132878	0.843750	0.453125
+9	0.032600	0.130860	0.865625	0.406250
+Evaluando después de fine-tuning...
+{'test_loss': 0.7209112048149109, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1375, 'test_runtime': 2.0332, 'test_samples_per_second': 78.695, 'test_steps_per_second': 4.918}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1620/3600 05:32 < 06:46, 4.87 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.499800	0.419174	0.221875	3.043750
+2	0.212700	0.188662	0.728125	0.700000
+3	0.118400	0.164191	0.784375	0.496875
+4	0.099500	0.151312	0.787500	0.537500
+5	0.093500	0.141711	0.800000	0.446875
+6	0.076000	0.138068	0.856250	0.381250
+7	0.079600	0.133713	0.853125	0.328125
+8	0.053500	0.132878	0.843750	0.453125
+9	0.032600	0.130860	0.865625	0.406250
+Evaluando después de fine-tuning...
+{'test_loss': 0.7209112048149109, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1375, 'test_runtime': 2.017, 'test_samples_per_second': 79.325, 'test_steps_per_second': 4.958}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1620/3600 04:02 < 04:57, 6.67 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.499800	0.419174	0.221875	3.043750
+2	0.212700	0.188662	0.728125	0.700000
+3	0.118400	0.164191	0.784375	0.496875
+4	0.099500	0.151312	0.787500	0.537500
+5	0.093500	0.141711	0.800000	0.446875
+6	0.076000	0.138068	0.856250	0.381250
+7	0.079600	0.133713	0.853125	0.328125
+8	0.053500	0.132878	0.843750	0.453125
+9	0.032600	0.130860	0.865625	0.406250
+Evaluando después de fine-tuning...
+{'test_loss': 0.7209112048149109, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1375, 'test_runtime': 1.9996, 'test_samples_per_second': 80.015, 'test_steps_per_second': 5.001}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1620/3600 06:03 < 07:24, 4.46 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.499800	0.419174	0.221875	3.043750
+2	0.212700	0.188662	0.728125	0.700000
+3	0.118400	0.164191	0.784375	0.496875
+4	0.099500	0.151312	0.787500	0.537500
+5	0.093500	0.141711	0.800000	0.446875
+6	0.076000	0.138068	0.856250	0.381250
+7	0.079600	0.133713	0.853125	0.328125
+8	0.053500	0.132878	0.843750	0.453125
+9	0.032600	0.130860	0.865625	0.406250
+Evaluando después de fine-tuning...
+{'test_loss': 0.7209112048149109, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1375, 'test_runtime': 2.1226, 'test_samples_per_second': 75.381, 'test_steps_per_second': 4.711}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [2632/3760 06:38 < 02:50, 6.60 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.521300	0.401554	0.300300	2.543544
+2	0.212300	0.214285	0.660661	0.942943
+3	0.175200	0.149388	0.756757	0.687688
+4	0.129800	0.142276	0.786787	0.594595
+5	0.106600	0.142712	0.801802	0.531532
+6	0.062200	0.141544	0.810811	0.618619
+7	0.043400	0.136052	0.819820	0.516517
+8	0.033900	0.136393	0.855856	0.408408
+9	0.024300	0.127122	0.843844	0.561562
+10	0.030800	0.138682	0.837838	0.561562
+11	0.024700	0.127265	0.870871	0.474474
+12	0.017700	0.152236	0.840841	0.507508
+13	0.017600	0.142137	0.858859	0.417417
+14	0.009100	0.143566	0.873874	0.435435
+Evaluando después de fine-tuning...
+{'test_loss': 0.5692458152770996, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.46875, 'test_runtime': 0.446, 'test_samples_per_second': 71.751, 'test_steps_per_second': 4.484}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [2068/3760 07:04 < 05:47, 4.87 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.504500	0.383498	0.288288	2.564565
+2	0.197600	0.188298	0.666667	0.879880
+3	0.119700	0.156429	0.789790	0.594595
+4	0.123600	0.146288	0.771772	0.654655
+5	0.094200	0.136759	0.810811	0.537538
+6	0.054200	0.140609	0.825826	0.549550
+7	0.050500	0.126733	0.834835	0.519520
+8	0.056000	0.132142	0.858859	0.492492
+9	0.045700	0.128374	0.840841	0.615616
+10	0.058300	0.127511	0.861862	0.516517
+11	0.021200	0.134182	0.849850	0.585586
+Evaluando después de fine-tuning...
+{'test_loss': 0.602138876914978, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.125, 'test_runtime': 0.4477, 'test_samples_per_second': 71.476, 'test_steps_per_second': 4.467}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1128/3760 02:50 < 06:38, 6.61 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.477000	0.371025	0.336336	2.246246
+2	0.190700	0.205943	0.654655	0.936937
+3	0.148600	0.158122	0.825826	0.453453
+4	0.114900	0.143750	0.804805	0.456456
+5	0.095100	0.147586	0.801802	0.570571
+6	0.054800	0.140810	0.834835	0.531532
+Evaluando después de fine-tuning...
+{'test_loss': 0.7248178720474243, 'test_exact_match': 0.4375, 'test_mean_levenshtein': 1.34375, 'test_runtime': 0.4157, 'test_samples_per_second': 76.98, 'test_steps_per_second': 4.811}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1880/3760 04:40 < 04:40, 6.70 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.478300	0.390184	0.294294	2.543544
+2	0.193600	0.205933	0.639640	0.978979
+3	0.123100	0.158726	0.783784	0.726727
+4	0.116200	0.144240	0.786787	0.603604
+5	0.088900	0.140422	0.834835	0.468468
+6	0.054300	0.142410	0.822823	0.534535
+7	0.048400	0.139962	0.849850	0.429429
+8	0.031000	0.138508	0.855856	0.435435
+9	0.026800	0.127068	0.825826	0.579580
+10	0.022100	0.136957	0.840841	0.504505
+Evaluando después de fine-tuning...
+{'test_loss': 0.7788739204406738, 'test_exact_match': 0.6875, 'test_mean_levenshtein': 0.84375, 'test_runtime': 0.4439, 'test_samples_per_second': 72.09, 'test_steps_per_second': 4.506}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [2444/3760 06:00 < 03:14, 6.76 it/s, Epoch 13/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.472800	0.410366	0.333333	2.420420
+2	0.213100	0.217318	0.630631	0.942943
+3	0.116500	0.157785	0.768769	0.654655
+4	0.140000	0.151178	0.771772	0.618619
+5	0.086400	0.144592	0.819820	0.456456
+6	0.053000	0.130044	0.822823	0.558559
+7	0.050900	0.126909	0.843844	0.573574
+8	0.028800	0.141913	0.834835	0.516517
+9	0.022200	0.130534	0.837838	0.549550
+10	0.032600	0.138853	0.861862	0.453453
+11	0.018300	0.137379	0.822823	0.627628
+12	0.017000	0.138829	0.870871	0.492492
+13	0.021400	0.133199	0.849850	0.450450
+Evaluando después de fine-tuning...
+{'test_loss': 0.482547402381897, 'test_exact_match': 0.65625, 'test_mean_levenshtein': 0.71875, 'test_runtime': 0.432, 'test_samples_per_second': 74.067, 'test_steps_per_second': 4.629}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold5.csv
+
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	real_only	0.11250	5.08125
+1	google_flan-t5-base	synthetic_only	0.55000	1.15625
+2	google_flan-t5-base	real_plus_synthetic	0.59375	0.95000
+3	facebook_bart-base	real_only	0.17500	3.22500
+4	facebook_bart-base	synthetic_only	0.51875	1.13750
+5	facebook_bart-base	real_plus_synthetic	0.58750	0.90000
+
+
+
+Real Data:  (160, 3)
+Synthetic Data:  (3200, 3)
+Real and Synthetic Data:  (3360, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+# Modelo: facebook/mbart-large-50-many-to-many-mmt #
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1080/3600 22:12 < 51:55, 0.81 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.337000	0.380490	0.662500	0.840625
+2	0.166600	0.307286	0.743750	0.540625
+3	0.114800	0.270986	0.787500	0.540625
+4	0.088600	0.299974	0.775000	0.550000
+5	0.054200	0.302128	0.731250	0.656250
+6	0.052000	0.315046	0.778125	0.603125
+Evaluando después de fine-tuning...
+{'test_loss': 1.0156490802764893, 'test_exact_match': 0.4875, 'test_mean_levenshtein': 1.28125, 'test_runtime': 3.1795, 'test_samples_per_second': 50.323, 'test_steps_per_second': 3.145}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1260/3600 26:37 < 49:30, 0.79 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.082300	0.329828	0.759375	0.600000
+2	0.060000	0.342834	0.678125	0.809375
+3	0.051200	0.352366	0.759375	0.606250
+4	0.038800	0.367685	0.775000	0.603125
+5	0.018500	0.334777	0.765625	0.503125
+6	0.016200	0.350081	0.750000	0.568750
+7	0.015500	0.343880	0.765625	0.562500
+Evaluando después de fine-tuning...
+{'test_loss': 1.2997500896453857, 'test_exact_match': 0.49375, 'test_mean_levenshtein': 1.30625, 'test_runtime': 3.1802, 'test_samples_per_second': 50.312, 'test_steps_per_second': 3.144}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1440/3600 31:55 < 47:57, 0.75 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.028900	0.387573	0.681250	0.825000
+2	0.013800	0.385775	0.728125	0.856250
+3	0.021500	0.380616	0.712500	0.662500
+4	0.028500	0.402776	0.740625	0.643750
+5	0.022100	0.377374	0.765625	0.575000
+6	0.024700	0.371062	0.762500	0.581250
+7	0.007100	0.385388	0.743750	0.581250
+8	0.005300	0.419416	0.750000	0.587500
+Evaluando después de fine-tuning...
+{'test_loss': 1.443225622177124, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.1875, 'test_runtime': 3.061, 'test_samples_per_second': 52.271, 'test_steps_per_second': 3.267}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1260/3600 14:03 < 26:09, 1.49 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.027900	0.405171	0.737500	0.709375
+2	0.015900	0.422659	0.743750	0.609375
+3	0.013400	0.405028	0.728125	0.706250
+4	0.015500	0.430705	0.771875	0.596875
+5	0.007800	0.430085	0.700000	0.818750
+6	0.010500	0.424726	0.756250	0.665625
+7	0.015300	0.406026	0.712500	0.768750
+Evaluando después de fine-tuning...
+{'test_loss': 1.4741491079330444, 'test_exact_match': 0.5, 'test_mean_levenshtein': 1.29375, 'test_runtime': 3.0899, 'test_samples_per_second': 51.782, 'test_steps_per_second': 3.236}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 720/3600 07:02 < 28:13, 1.70 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.015700	0.433931	0.787500	0.571875
+2	0.008500	0.435624	0.734375	0.800000
+3	0.012800	0.446732	0.753125	0.687500
+4	0.012100	0.421133	0.706250	0.718750
+Evaluando después de fine-tuning...
+{'test_loss': 1.4730955362319946, 'test_exact_match': 0.44375, 'test_mean_levenshtein': 1.41875, 'test_runtime': 3.0774, 'test_samples_per_second': 51.992, 'test_steps_per_second': 3.25}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [ 752/3760 07:13 < 29:00, 1.73 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.054000	0.130113	0.885886	0.312312
+2	0.033200	0.145235	0.816817	0.549550
+3	0.015200	0.150909	0.882883	0.411411
+4	0.015600	0.151368	0.846847	0.552553
+Evaluando después de fine-tuning...
+{'test_loss': 0.912290096282959, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 1.28125, 'test_runtime': 0.6028, 'test_samples_per_second': 53.088, 'test_steps_per_second': 3.318}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1504/3760 14:32 < 21:50, 1.72 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.026600	0.135418	0.828829	0.555556
+2	0.035400	0.125828	0.870871	0.390390
+3	0.017900	0.163464	0.846847	0.474474
+4	0.004300	0.151868	0.861862	0.492492
+5	0.002800	0.153024	0.882883	0.402402
+6	0.001300	0.151683	0.885886	0.426426
+7	0.009600	0.153534	0.861862	0.447447
+8	0.000300	0.153550	0.879880	0.405405
+Evaluando después de fine-tuning...
+{'test_loss': 0.5697614550590515, 'test_exact_match': 0.5625, 'test_mean_levenshtein': 1.0, 'test_runtime': 0.6577, 'test_samples_per_second': 48.652, 'test_steps_per_second': 3.041}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [ 752/3760 07:16 < 29:12, 1.72 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.006600	0.192616	0.855856	0.429429
+2	0.020000	0.198545	0.819820	0.573574
+3	0.009500	0.191630	0.858859	0.441441
+4	0.004900	0.177369	0.864865	0.441441
+Evaluando después de fine-tuning...
+{'test_loss': 0.21182310581207275, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.84375, 'test_runtime': 0.5922, 'test_samples_per_second': 54.039, 'test_steps_per_second': 3.377}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1128/3760 10:55 < 25:33, 1.72 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.009800	0.211606	0.804805	0.588589
+2	0.015400	0.195587	0.804805	0.501502
+3	0.005800	0.211941	0.840841	0.567568
+4	0.002400	0.200842	0.828829	0.522523
+5	0.005300	0.193033	0.834835	0.498498
+6	0.003500	0.201609	0.846847	0.504505
+Evaluando después de fine-tuning...
+{'test_loss': 0.17205290496349335, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.875, 'test_runtime': 0.6561, 'test_samples_per_second': 48.772, 'test_steps_per_second': 3.048}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 752/3760 09:22 < 37:34, 1.33 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.009500	0.249726	0.822823	0.537538
+2	0.012000	0.237938	0.810811	0.534535
+3	0.004900	0.248119	0.789790	0.639640
+4	0.009700	0.251961	0.795796	0.639640
+Evaluando después de fine-tuning...
+{'test_loss': 0.0732857808470726, 'test_exact_match': 0.84375, 'test_mean_levenshtein': 0.3125, 'test_runtime': 0.6022, 'test_samples_per_second': 53.142, 'test_steps_per_second': 3.321}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold5.csv
+
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	facebook_mbart-large-50-many-to-many-mmt	synthetic_only	0.48875	1.2975
+1	facebook_mbart-large-50-many-to-many-mmt	real_plus_synthetic	0.68750	0.8625
+
+
+
+## x30 ##
+
+Real Data:  (160, 3)
+Synthetic Data:  (4800, 3)
+Real and Synthetic Data:  (4960, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+
+
+# Modelo: google/flan-t5-base #
+model_name:  google/flan-t5-base
+model_name_dir:  google_flan-t5-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+tokenizer_config.json: 100%
+ 2.54k/2.54k [00:00<00:00, 191kB/s]
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 9.81MB/s]
+tokenizer.json: 100%
+ 2.42M/2.42M [00:00<00:00, 22.8MB/s]
+special_tokens_map.json: 100%
+ 2.20k/2.20k [00:00<00:00, 188kB/s]
+config.json: 100%
+ 1.40k/1.40k [00:00<00:00, 120kB/s]
+model.safetensors: 100%
+ 990M/990M [00:04<00:00, 219MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 14.1kB/s]
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Entrenando el modelo...
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+wandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit: ··········
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241122_170237-dajqayq3
+Syncing run ./results/google_flan-t5-base/synthetic_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/dajqayq3
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+ [3780/5400 17:21 < 07:26, 3.63 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.586800	0.506312	0.089583	3.743750
+2	0.329400	0.241269	0.579167	1.235417
+3	0.269800	0.181855	0.731250	0.658333
+4	0.195600	0.146815	0.818750	0.452083
+5	0.173300	0.135767	0.825000	0.350000
+6	0.130200	0.119628	0.847917	0.310417
+7	0.121700	0.106786	0.862500	0.277083
+8	0.115000	0.102315	0.883333	0.227083
+9	0.094200	0.098690	0.895833	0.179167
+10	0.076500	0.096296	0.895833	0.241667
+11	0.075000	0.087240	0.908333	0.187500
+12	0.088800	0.087962	0.900000	0.200000
+13	0.084200	0.084670	0.910417	0.170833
+14	0.064000	0.084972	0.912500	0.158333
+Evaluando después de fine-tuning...
+{'test_loss': 0.6979011297225952, 'test_exact_match': 0.60625, 'test_mean_levenshtein': 0.9125, 'test_runtime': 2.4819, 'test_samples_per_second': 64.467, 'test_steps_per_second': 4.029}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [3780/5400 18:37 < 07:59, 3.38 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.586800	0.506312	0.089583	3.743750
+2	0.329400	0.241269	0.579167	1.235417
+3	0.269800	0.181855	0.731250	0.658333
+4	0.195600	0.146815	0.818750	0.452083
+5	0.173300	0.135767	0.825000	0.350000
+6	0.130200	0.119628	0.847917	0.310417
+7	0.121700	0.106786	0.862500	0.277083
+8	0.115000	0.102315	0.883333	0.227083
+9	0.094200	0.098690	0.895833	0.179167
+10	0.076500	0.096296	0.895833	0.241667
+11	0.075000	0.087240	0.908333	0.187500
+12	0.088800	0.087962	0.900000	0.200000
+13	0.084200	0.084670	0.910417	0.170833
+14	0.064000	0.084972	0.912500	0.158333
+Evaluando después de fine-tuning...
+{'test_loss': 0.6979011297225952, 'test_exact_match': 0.60625, 'test_mean_levenshtein': 0.9125, 'test_runtime': 2.4889, 'test_samples_per_second': 64.284, 'test_steps_per_second': 4.018}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [3780/5400 19:29 < 08:21, 3.23 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.586800	0.506312	0.089583	3.743750
+2	0.329400	0.241269	0.579167	1.235417
+3	0.269800	0.181855	0.731250	0.658333
+4	0.195600	0.146815	0.818750	0.452083
+5	0.173300	0.135767	0.825000	0.350000
+6	0.130200	0.119628	0.847917	0.310417
+7	0.121700	0.106786	0.862500	0.277083
+8	0.115000	0.102315	0.883333	0.227083
+9	0.094200	0.098690	0.895833	0.179167
+10	0.076500	0.096296	0.895833	0.241667
+11	0.075000	0.087240	0.908333	0.187500
+12	0.088800	0.087962	0.900000	0.200000
+13	0.084200	0.084670	0.910417	0.170833
+14	0.064000	0.084972	0.912500	0.158333
+Evaluando después de fine-tuning...
+{'test_loss': 0.6979011297225952, 'test_exact_match': 0.60625, 'test_mean_levenshtein': 0.9125, 'test_runtime': 2.4525, 'test_samples_per_second': 65.24, 'test_steps_per_second': 4.077}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [3780/5400 30:20 < 13:00, 2.08 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.586800	0.506312	0.089583	3.743750
+2	0.329400	0.241269	0.579167	1.235417
+3	0.269800	0.181855	0.731250	0.658333
+4	0.195600	0.146815	0.818750	0.452083
+5	0.173300	0.135767	0.825000	0.350000
+6	0.130200	0.119628	0.847917	0.310417
+7	0.121700	0.106786	0.862500	0.277083
+8	0.115000	0.102315	0.883333	0.227083
+9	0.094200	0.098690	0.895833	0.179167
+10	0.076500	0.096296	0.895833	0.241667
+11	0.075000	0.087240	0.908333	0.187500
+12	0.088800	0.087962	0.900000	0.200000
+13	0.084200	0.084670	0.910417	0.170833
+14	0.064000	0.084972	0.912500	0.158333
+Evaluando después de fine-tuning...
+{'test_loss': 0.6979011297225952, 'test_exact_match': 0.60625, 'test_mean_levenshtein': 0.9125, 'test_runtime': 2.4748, 'test_samples_per_second': 64.65, 'test_steps_per_second': 4.041}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [3780/5400 28:52 < 12:22, 2.18 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.586800	0.506312	0.089583	3.743750
+2	0.329400	0.241269	0.579167	1.235417
+3	0.269800	0.181855	0.731250	0.658333
+4	0.195600	0.146815	0.818750	0.452083
+5	0.173300	0.135767	0.825000	0.350000
+6	0.130200	0.119628	0.847917	0.310417
+7	0.121700	0.106786	0.862500	0.277083
+8	0.115000	0.102315	0.883333	0.227083
+9	0.094200	0.098690	0.895833	0.179167
+10	0.076500	0.096296	0.895833	0.241667
+11	0.075000	0.087240	0.908333	0.187500
+12	0.088800	0.087962	0.900000	0.200000
+13	0.084200	0.084670	0.910417	0.170833
+14	0.064000	0.084972	0.912500	0.158333
+Evaluando después de fine-tuning...
+{'test_loss': 0.6979011297225952, 'test_exact_match': 0.60625, 'test_mean_levenshtein': 0.9125, 'test_runtime': 2.5179, 'test_samples_per_second': 63.546, 'test_steps_per_second': 3.972}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [3058/5560 23:41 < 19:23, 2.15 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.629200	0.514820	0.085193	3.764706
+2	0.349600	0.250954	0.541582	1.476673
+3	0.250200	0.182920	0.742394	0.827586
+4	0.173100	0.157861	0.805274	0.444219
+5	0.172800	0.139841	0.839757	0.385396
+6	0.147200	0.129182	0.853955	0.283976
+7	0.107100	0.120292	0.851927	0.336714
+8	0.114200	0.114916	0.866126	0.283976
+9	0.109000	0.113147	0.872211	0.275862
+10	0.095200	0.106275	0.872211	0.300203
+11	0.078900	0.106881	0.880325	0.249493
+Evaluando después de fine-tuning...
+{'test_loss': 0.4639328122138977, 'test_exact_match': 0.6875, 'test_mean_levenshtein': 0.65625, 'test_runtime': 0.5893, 'test_samples_per_second': 54.299, 'test_steps_per_second': 3.394}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [4170/5560 33:24 < 11:08, 2.08 it/s, Epoch 15/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.627300	0.519927	0.083164	3.748479
+2	0.351600	0.256535	0.533469	1.586207
+3	0.253100	0.182896	0.742394	0.774848
+4	0.169400	0.157683	0.801217	0.478702
+5	0.176200	0.141595	0.839757	0.393509
+6	0.144700	0.124411	0.847870	0.371197
+7	0.103200	0.116051	0.849899	0.336714
+8	0.102800	0.112173	0.866126	0.304260
+9	0.108000	0.113551	0.884381	0.239351
+10	0.086800	0.102357	0.878296	0.294118
+11	0.074400	0.105577	0.876268	0.243408
+12	0.095800	0.097778	0.898580	0.253550
+13	0.078200	0.093718	0.886410	0.314402
+14	0.076200	0.091077	0.884381	0.290061
+15	0.074600	0.093698	0.884381	0.300203
+Evaluando después de fine-tuning...
+{'test_loss': 0.5040387511253357, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 0.8125, 'test_runtime': 0.5138, 'test_samples_per_second': 62.282, 'test_steps_per_second': 3.893}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [3892/5560 25:00 < 10:43, 2.59 it/s, Epoch 14/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.625400	0.511214	0.087221	3.703854
+2	0.348000	0.252035	0.543611	1.480730
+3	0.239000	0.185582	0.742394	0.807302
+4	0.168500	0.156735	0.801217	0.468560
+5	0.176400	0.140732	0.841785	0.373225
+6	0.150300	0.126730	0.864097	0.267748
+7	0.104500	0.115660	0.847870	0.363083
+8	0.098100	0.113792	0.874239	0.290061
+9	0.113000	0.110289	0.876268	0.265720
+10	0.087100	0.102451	0.870183	0.273834
+11	0.074600	0.105198	0.886410	0.241379
+12	0.100600	0.097387	0.890467	0.237323
+13	0.079500	0.093607	0.886410	0.265720
+14	0.073200	0.092813	0.878296	0.267748
+Evaluando después de fine-tuning...
+{'test_loss': 0.48707619309425354, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 1.25, 'test_runtime': 0.6078, 'test_samples_per_second': 52.646, 'test_steps_per_second': 3.29}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [2224/5560 19:41 < 29:33, 1.88 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.627700	0.513534	0.101420	3.645030
+2	0.358100	0.256002	0.557809	1.448276
+3	0.234200	0.191371	0.748479	0.772819
+4	0.178700	0.165819	0.805274	0.476673
+5	0.159400	0.151548	0.858012	0.330629
+6	0.137700	0.134477	0.864097	0.279919
+7	0.105200	0.123960	0.868154	0.342799
+8	0.100200	0.121302	0.864097	0.296146
+Evaluando después de fine-tuning...
+{'test_loss': 0.7237274646759033, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 1.15625, 'test_runtime': 0.4934, 'test_samples_per_second': 64.85, 'test_steps_per_second': 4.053}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [3336/5560 24:38 < 16:26, 2.25 it/s, Epoch 12/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.627000	0.514466	0.083164	3.756592
+2	0.363200	0.254466	0.553753	1.565923
+3	0.249200	0.189384	0.740365	0.801217
+4	0.168900	0.160380	0.799189	0.496957
+5	0.171900	0.146856	0.831643	0.399594
+6	0.150400	0.127812	0.862069	0.288032
+7	0.101700	0.120956	0.860041	0.320487
+8	0.095000	0.118193	0.874239	0.328600
+9	0.122700	0.114164	0.890467	0.279919
+10	0.084100	0.107102	0.880325	0.286004
+11	0.073100	0.108707	0.886410	0.237323
+12	0.104900	0.103916	0.890467	0.253550
+Evaluando después de fine-tuning...
+{'test_loss': 0.6414145827293396, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 1.25, 'test_runtime': 0.5544, 'test_samples_per_second': 57.72, 'test_steps_per_second': 3.608}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold5.csv
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	synthetic_only	0.60625	0.9125
+1	google_flan-t5-base	real_plus_synthetic	0.57500	1.0250
+
+
+
+# Modelo: facebook/bart-base #
+model_name:  facebook/bart-base
+model_name_dir:  facebook_bart-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+config.json: 100%
+ 1.72k/1.72k [00:00<00:00, 145kB/s]
+vocab.json: 100%
+ 899k/899k [00:00<00:00, 4.56MB/s]
+merges.txt: 100%
+ 456k/456k [00:00<00:00, 3.50MB/s]
+tokenizer.json: 100%
+ 1.36M/1.36M [00:00<00:00, 6.79MB/s]
+model.safetensors: 100%
+ 558M/558M [00:03<00:00, 160MB/s]
+Entrenando el modelo...
+ [2430/5400 07:39 < 09:21, 5.29 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282800	0.191370	0.622917	0.906250
+2	0.155700	0.108861	0.847917	0.322917
+3	0.106000	0.085257	0.883333	0.287500
+4	0.081500	0.086841	0.850000	0.356250
+5	0.067400	0.084794	0.877083	0.312500
+6	0.053200	0.072776	0.910417	0.250000
+7	0.030600	0.071957	0.902083	0.277083
+8	0.031100	0.070962	0.891667	0.337500
+9	0.016300	0.072747	0.910417	0.254167
+Evaluando después de fine-tuning...
+{'test_loss': 0.6937204599380493, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.075, 'test_runtime': 2.0944, 'test_samples_per_second': 76.393, 'test_steps_per_second': 4.775}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [2430/5400 05:54 < 07:14, 6.84 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282800	0.191370	0.622917	0.906250
+2	0.155700	0.108861	0.847917	0.322917
+3	0.106000	0.085257	0.883333	0.287500
+4	0.081500	0.086841	0.850000	0.356250
+5	0.067400	0.084794	0.877083	0.312500
+6	0.053200	0.072776	0.910417	0.250000
+7	0.030600	0.071957	0.902083	0.277083
+8	0.031100	0.070962	0.891667	0.337500
+9	0.016300	0.072747	0.910417	0.254167
+Evaluando después de fine-tuning...
+{'test_loss': 0.6937204599380493, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.075, 'test_runtime': 2.0516, 'test_samples_per_second': 77.989, 'test_steps_per_second': 4.874}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [2430/5400 06:06 < 07:28, 6.62 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282800	0.191370	0.622917	0.906250
+2	0.155700	0.108861	0.847917	0.322917
+3	0.106000	0.085257	0.883333	0.287500
+4	0.081500	0.086841	0.850000	0.356250
+5	0.067400	0.084794	0.877083	0.312500
+6	0.053200	0.072776	0.910417	0.250000
+7	0.030600	0.071957	0.902083	0.277083
+8	0.031100	0.070962	0.891667	0.337500
+9	0.016300	0.072747	0.910417	0.254167
+Evaluando después de fine-tuning...
+{'test_loss': 0.6937204599380493, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.075, 'test_runtime': 2.0203, 'test_samples_per_second': 79.196, 'test_steps_per_second': 4.95}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [2430/5400 08:15 < 10:06, 4.90 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282800	0.191370	0.622917	0.906250
+2	0.155700	0.108861	0.847917	0.322917
+3	0.106000	0.085257	0.883333	0.287500
+4	0.081500	0.086841	0.850000	0.356250
+5	0.067400	0.084794	0.877083	0.312500
+6	0.053200	0.072776	0.910417	0.250000
+7	0.030600	0.071957	0.902083	0.277083
+8	0.031100	0.070962	0.891667	0.337500
+9	0.016300	0.072747	0.910417	0.254167
+Evaluando después de fine-tuning...
+{'test_loss': 0.6937204599380493, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.075, 'test_runtime': 2.0305, 'test_samples_per_second': 78.797, 'test_steps_per_second': 4.925}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [2430/5400 05:58 < 07:18, 6.77 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282800	0.191370	0.622917	0.906250
+2	0.155700	0.108861	0.847917	0.322917
+3	0.106000	0.085257	0.883333	0.287500
+4	0.081500	0.086841	0.850000	0.356250
+5	0.067400	0.084794	0.877083	0.312500
+6	0.053200	0.072776	0.910417	0.250000
+7	0.030600	0.071957	0.902083	0.277083
+8	0.031100	0.070962	0.891667	0.337500
+9	0.016300	0.072747	0.910417	0.254167
+Evaluando después de fine-tuning...
+{'test_loss': 0.6937204599380493, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.075, 'test_runtime': 2.0353, 'test_samples_per_second': 78.613, 'test_steps_per_second': 4.913}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1668/5560 04:07 < 09:37, 6.74 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.321400	0.202747	0.592292	1.154158
+2	0.175800	0.123537	0.801217	0.486815
+3	0.120700	0.102258	0.884381	0.316430
+4	0.092000	0.087904	0.884381	0.328600
+5	0.062100	0.090067	0.862069	0.432049
+6	0.064000	0.084919	0.868154	0.342799
+Evaluando después de fine-tuning...
+{'test_loss': 0.47533464431762695, 'test_exact_match': 0.625, 'test_mean_levenshtein': 1.40625, 'test_runtime': 0.4248, 'test_samples_per_second': 75.333, 'test_steps_per_second': 4.708}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [2502/5560 08:23 < 10:16, 4.96 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.291800	0.193145	0.598377	1.002028
+2	0.170100	0.123059	0.795132	0.498986
+3	0.109100	0.099406	0.855984	0.361055
+4	0.086500	0.089291	0.890467	0.373225
+5	0.069000	0.087795	0.860041	0.450304
+6	0.056400	0.079854	0.904665	0.257606
+7	0.038000	0.085430	0.880325	0.352941
+8	0.025400	0.081755	0.884381	0.257606
+9	0.050300	0.080809	0.878296	0.320487
+Evaluando después de fine-tuning...
+{'test_loss': 0.46509382128715515, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 1.1875, 'test_runtime': 0.4217, 'test_samples_per_second': 75.883, 'test_steps_per_second': 4.743}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1668/5560 04:02 < 09:26, 6.87 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.307700	0.201096	0.569980	1.099391
+2	0.160600	0.118909	0.801217	0.486815
+3	0.104600	0.095979	0.876268	0.348884
+4	0.090500	0.080699	0.864097	0.359026
+5	0.071000	0.085387	0.860041	0.393509
+6	0.061000	0.081653	0.880325	0.322515
+Evaluando después de fine-tuning...
+{'test_loss': 0.7808813452720642, 'test_exact_match': 0.5, 'test_mean_levenshtein': 1.21875, 'test_runtime': 0.4287, 'test_samples_per_second': 74.645, 'test_steps_per_second': 4.665}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1946/5560 06:20 < 11:46, 5.11 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.299400	0.200396	0.586207	1.024341
+2	0.193000	0.123843	0.764706	0.586207
+3	0.105300	0.112758	0.825558	0.403651
+4	0.089600	0.098340	0.888438	0.279919
+5	0.051700	0.095714	0.858012	0.454361
+6	0.055100	0.089592	0.884381	0.308316
+7	0.040600	0.091146	0.882353	0.334686
+Evaluando después de fine-tuning...
+{'test_loss': 0.6903468370437622, 'test_exact_match': 0.75, 'test_mean_levenshtein': 0.59375, 'test_runtime': 0.4382, 'test_samples_per_second': 73.025, 'test_steps_per_second': 4.564}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [2502/5560 06:11 < 07:34, 6.73 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.298700	0.197645	0.590264	1.002028
+2	0.180200	0.116729	0.780933	0.503043
+3	0.106700	0.096491	0.845842	0.363083
+4	0.090000	0.088594	0.860041	0.346856
+5	0.054500	0.089752	0.855984	0.381339
+6	0.054100	0.077844	0.894523	0.281947
+7	0.037000	0.078892	0.862069	0.373225
+8	0.024200	0.077785	0.898580	0.243408
+9	0.054600	0.081227	0.862069	0.369168
+Evaluando después de fine-tuning...
+{'test_loss': 0.6039453744888306, 'test_exact_match': 0.65625, 'test_mean_levenshtein': 0.5625, 'test_runtime': 0.4326, 'test_samples_per_second': 73.973, 'test_steps_per_second': 4.623}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold5.csv
+
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	synthetic_only	0.60625	0.91250
+1	google_flan-t5-base	real_plus_synthetic	0.57500	1.02500
+2	facebook_bart-base	synthetic_only	0.55625	1.07500
+3	facebook_bart-base	real_plus_synthetic	0.60000	0.99375
+
+
+Real Data:  (160, 3)
+Synthetic Data:  (4800, 3)
+Real and Synthetic Data:  (4960, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+# Modelo: facebook/mbart-large-50-many-to-many-mmt #
+tokenizer_config.json: 100%
+ 529/529 [00:00<00:00, 41.6kB/s]
+config.json: 100%
+ 1.43k/1.43k [00:00<00:00, 99.9kB/s]
+sentencepiece.bpe.model: 100%
+ 5.07M/5.07M [00:00<00:00, 65.8MB/s]
+special_tokens_map.json: 100%
+ 649/649 [00:00<00:00, 59.6kB/s]
+model.safetensors: 100%
+ 2.44G/2.44G [00:10<00:00, 219MB/s]
+generation_config.json: 100%
+ 261/261 [00:00<00:00, 21.4kB/s]
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Entrenando el modelo...
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Logging into wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+wandb: Paste an API key from your profile and hit enter, or press ctrl+c to quit:wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241125_200010-9azeoak2
+Syncing run ./results/facebook_mbart-large-50-many-to-many-mmt/synthetic_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/9azeoak2
+ [2430/5400 21:45 < 26:37, 1.86 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.282400	0.327194	0.770833	0.477083
+2	0.176200	0.261620	0.789583	0.483333
+3	0.120200	0.240835	0.810417	0.327083
+4	0.088900	0.231037	0.822917	0.447917
+5	0.071600	0.244846	0.808333	0.433333
+6	0.024100	0.258447	0.858333	0.304167
+7	0.018400	0.252014	0.806250	0.418750
+8	0.014100	0.254734	0.850000	0.362500
+9	0.002500	0.250030	0.847917	0.350000
+Evaluando después de fine-tuning...
+{'test_loss': 1.2889068126678467, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 1.175, 'test_runtime': 3.1811, 'test_samples_per_second': 50.298, 'test_steps_per_second': 3.144}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1890/5400 16:48 < 31:15, 1.87 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.026000	0.299060	0.758333	0.562500
+2	0.034500	0.280423	0.785417	0.552083
+3	0.015900	0.289484	0.785417	0.479167
+4	0.012400	0.294609	0.850000	0.364583
+5	0.009000	0.277320	0.797917	0.520833
+6	0.005400	0.281653	0.835417	0.335417
+7	0.005300	0.293944	0.818750	0.447917
+Evaluando después de fine-tuning...
+{'test_loss': 1.3675768375396729, 'test_exact_match': 0.51875, 'test_mean_levenshtein': 1.15625, 'test_runtime': 3.0892, 'test_samples_per_second': 51.793, 'test_steps_per_second': 3.237}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1350/5400 12:05 < 36:19, 1.86 it/s, Epoch 5/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.017300	0.306227	0.789583	0.500000
+2	0.010000	0.310729	0.810417	0.402083
+3	0.005700	0.309255	0.814583	0.414583
+4	0.010000	0.294410	0.812500	0.439583
+5	0.008100	0.284271	0.818750	0.420833
+Evaluando después de fine-tuning...
+{'test_loss': 1.4615952968597412, 'test_exact_match': 0.54375, 'test_mean_levenshtein': 1.06875, 'test_runtime': 2.9784, 'test_samples_per_second': 53.72, 'test_steps_per_second': 3.357}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1890/5400 36:07 < 1:07:10, 0.87 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.008900	0.308645	0.779167	0.468750
+2	0.020300	0.278433	0.808333	0.408333
+3	0.002800	0.319760	0.797917	0.412500
+4	0.014900	0.328217	0.825000	0.333333
+5	0.032400	0.388094	0.808333	0.464583
+6	0.014800	0.318901	0.825000	0.306250
+7	0.013800	0.306462	0.785417	0.472917
+Evaluando después de fine-tuning...
+{'test_loss': 1.4105756282806396, 'test_exact_match': 0.5375, 'test_mean_levenshtein': 1.24375, 'test_runtime': 3.1505, 'test_samples_per_second': 50.786, 'test_steps_per_second': 3.174}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [ 271/5400 01:51 < 35:33, 2.40 it/s, Epoch 1/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.006400	0.334304	0.800000	0.454167
+ [1080/5400 17:05 < 1:08:28, 1.05 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.006400	0.334304	0.800000	0.454167
+2	0.009100	0.330545	0.789583	0.460417
+3	0.002900	0.363448	0.758333	0.620833
+4	0.020500	0.343169	0.797917	0.447917
+Evaluando después de fine-tuning...
+{'test_loss': 1.4933497905731201, 'test_exact_match': 0.5375, 'test_mean_levenshtein': 1.30625, 'test_runtime': 3.1011, 'test_samples_per_second': 51.594, 'test_steps_per_second': 3.225}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [1112/5560 16:34 < 1:06:24, 1.12 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.036300	0.110170	0.878296	0.300203
+2	0.027300	0.112249	0.886410	0.239351
+3	0.017500	0.108816	0.892495	0.261663
+4	0.005100	0.105900	0.900609	0.271805
+Evaluando después de fine-tuning...
+{'test_loss': 0.8806143999099731, 'test_exact_match': 0.5, 'test_mean_levenshtein': 1.375, 'test_runtime': 0.5832, 'test_samples_per_second': 54.874, 'test_steps_per_second': 3.43}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [1668/5560 22:26 < 52:25, 1.24 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.028300	0.149378	0.809331	0.535497
+2	0.014500	0.124580	0.845842	0.356998
+3	0.017700	0.116777	0.870183	0.377282
+4	0.001400	0.116870	0.864097	0.383367
+5	0.005000	0.118120	0.874239	0.379310
+6	0.005100	0.112792	0.880325	0.332657
+Evaluando después de fine-tuning...
+{'test_loss': 0.30041152238845825, 'test_exact_match': 0.625, 'test_mean_levenshtein': 1.6875, 'test_runtime': 1.008, 'test_samples_per_second': 31.746, 'test_steps_per_second': 1.984}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [1390/5560 16:00 < 48:05, 1.44 it/s, Epoch 5/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.011000	0.118306	0.866126	0.342799
+2	0.009500	0.129463	0.906694	0.249493
+3	0.004600	0.135938	0.884381	0.314402
+4	0.002800	0.131487	0.872211	0.342799
+5	0.005400	0.128346	0.878296	0.352941
+Evaluando después de fine-tuning...
+{'test_loss': 0.32184338569641113, 'test_exact_match': 0.84375, 'test_mean_levenshtein': 0.40625, 'test_runtime': 0.5544, 'test_samples_per_second': 57.72, 'test_steps_per_second': 3.608}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [1112/5560 09:53 < 39:38, 1.87 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.003100	0.128202	0.894523	0.271805
+2	0.016700	0.127566	0.882353	0.308316
+3	0.005400	0.136710	0.845842	0.434077
+4	0.007200	0.141488	0.880325	0.310345
+Evaluando después de fine-tuning...
+{'test_loss': 0.24326427280902863, 'test_exact_match': 0.8125, 'test_mean_levenshtein': 0.59375, 'test_runtime': 0.5665, 'test_samples_per_second': 56.485, 'test_steps_per_second': 3.53}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [1112/5560 10:02 < 40:14, 1.84 it/s, Epoch 4/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.005700	0.135198	0.851927	0.363083
+2	0.028800	0.133974	0.853955	0.391481
+3	0.006100	0.143596	0.858012	0.346856
+4	0.015400	0.145346	0.835700	0.387424
+Evaluando después de fine-tuning...
+{'test_loss': 0.09534136205911636, 'test_exact_match': 0.90625, 'test_mean_levenshtein': 0.25, 'test_runtime': 0.5944, 'test_samples_per_second': 53.838, 'test_steps_per_second': 3.365}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold5.csv
+
+
+
+
+
+## x50 ##
+
+Real Data:  (160, 3)
+Synthetic Data:  (8000, 3)
+Real and Synthetic Data:  (8160, 3)
+
+K-Fold Cross-Validation
+real_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+synthetic_only:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+real_plus_synthetic:
+- Processing fold 1
+- Processing fold 2
+- Processing fold 3
+- Processing fold 4
+- Processing fold 5
+
+
+
+# Modelo: google/flan-t5-base #
+model_name:  google/flan-t5-base
+model_name_dir:  google_flan-t5-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: jefferson-castro (jefferson-castro-pucp). Use `wandb login --relogin` to force relogin
+Tracking run with wandb version 0.18.7
+Run data is saved locally in /content/wandb/run-20241123_035818-dmlcno9g
+Syncing run ./results/google_flan-t5-base/synthetic_only/fold_1 to Weights & Biases (docs)
+View project at https://wandb.ai/jefferson-castro-pucp/huggingface
+View run at https://wandb.ai/jefferson-castro-pucp/huggingface/runs/dmlcno9g
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+ [3600/9000 20:17 < 30:27, 2.95 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.370700	0.278792	0.476250	1.878750
+2	0.173600	0.165094	0.758750	0.635000
+3	0.132700	0.117436	0.861250	0.330000
+4	0.129700	0.107766	0.857500	0.343750
+5	0.110500	0.093388	0.891250	0.288750
+6	0.098500	0.084664	0.881250	0.337500
+7	0.070200	0.081310	0.897500	0.258750
+8	0.075000	0.076864	0.905000	0.267500
+Evaluando después de fine-tuning...
+{'test_loss': 0.594288170337677, 'test_exact_match': 0.6125, 'test_mean_levenshtein': 0.86875, 'test_runtime': 2.3943, 'test_samples_per_second': 66.825, 'test_steps_per_second': 4.177}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [3600/9000 16:23 < 24:36, 3.66 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.370700	0.278792	0.476250	1.878750
+2	0.173600	0.165094	0.758750	0.635000
+3	0.132700	0.117436	0.861250	0.330000
+4	0.129700	0.107766	0.857500	0.343750
+5	0.110500	0.093388	0.891250	0.288750
+6	0.098500	0.084664	0.881250	0.337500
+7	0.070200	0.081310	0.897500	0.258750
+8	0.075000	0.076864	0.905000	0.267500
+Evaluando después de fine-tuning...
+{'test_loss': 0.594288170337677, 'test_exact_match': 0.6125, 'test_mean_levenshtein': 0.86875, 'test_runtime': 2.4304, 'test_samples_per_second': 65.832, 'test_steps_per_second': 4.115}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [3600/9000 18:32 < 27:49, 3.24 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.370700	0.278792	0.476250	1.878750
+2	0.173600	0.165094	0.758750	0.635000
+3	0.132700	0.117436	0.861250	0.330000
+4	0.129700	0.107766	0.857500	0.343750
+5	0.110500	0.093388	0.891250	0.288750
+6	0.098500	0.084664	0.881250	0.337500
+7	0.070200	0.081310	0.897500	0.258750
+8	0.075000	0.076864	0.905000	0.267500
+Evaluando después de fine-tuning...
+{'test_loss': 0.594288170337677, 'test_exact_match': 0.6125, 'test_mean_levenshtein': 0.86875, 'test_runtime': 2.4237, 'test_samples_per_second': 66.016, 'test_steps_per_second': 4.126}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [3600/9000 23:00 < 34:31, 2.61 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.370700	0.278792	0.476250	1.878750
+2	0.173600	0.165094	0.758750	0.635000
+3	0.132700	0.117436	0.861250	0.330000
+4	0.129700	0.107766	0.857500	0.343750
+5	0.110500	0.093388	0.891250	0.288750
+6	0.098500	0.084664	0.881250	0.337500
+7	0.070200	0.081310	0.897500	0.258750
+8	0.075000	0.076864	0.905000	0.267500
+Evaluando después de fine-tuning...
+{'test_loss': 0.594288170337677, 'test_exact_match': 0.6125, 'test_mean_levenshtein': 0.86875, 'test_runtime': 2.4321, 'test_samples_per_second': 65.787, 'test_steps_per_second': 4.112}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [3600/9000 16:24 < 24:37, 3.66 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.370700	0.278792	0.476250	1.878750
+2	0.173600	0.165094	0.758750	0.635000
+3	0.132700	0.117436	0.861250	0.330000
+4	0.129700	0.107766	0.857500	0.343750
+5	0.110500	0.093388	0.891250	0.288750
+6	0.098500	0.084664	0.881250	0.337500
+7	0.070200	0.081310	0.897500	0.258750
+8	0.075000	0.076864	0.905000	0.267500
+Evaluando después de fine-tuning...
+{'test_loss': 0.594288170337677, 'test_exact_match': 0.6125, 'test_mean_levenshtein': 0.86875, 'test_runtime': 2.3724, 'test_samples_per_second': 67.443, 'test_steps_per_second': 4.215}
+Predicciones guardadas en predictions_google_flan-t5-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [4122/9160 22:52 < 27:58, 3.00 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.405800	0.297812	0.370234	2.300123
+2	0.221500	0.146629	0.776138	0.624846
+3	0.163000	0.120267	0.856089	0.329643
+4	0.145400	0.091493	0.885609	0.259533
+5	0.101100	0.079331	0.891759	0.249692
+6	0.096800	0.068632	0.912669	0.237392
+7	0.073500	0.064900	0.921279	0.217712
+8	0.066800	0.063144	0.911439	0.226322
+9	0.061000	0.059575	0.921279	0.253383
+Evaluando después de fine-tuning...
+{'test_loss': 0.33075594902038574, 'test_exact_match': 0.78125, 'test_mean_levenshtein': 0.3125, 'test_runtime': 0.6104, 'test_samples_per_second': 52.422, 'test_steps_per_second': 3.276}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [5496/9160 34:27 < 22:58, 2.66 it/s, Epoch 12/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.410200	0.294932	0.386224	2.242312
+2	0.219000	0.150577	0.765068	0.638376
+3	0.159500	0.125956	0.859779	0.307503
+4	0.127100	0.100756	0.878229	0.258303
+5	0.099600	0.084425	0.889299	0.268143
+6	0.083800	0.075734	0.910209	0.237392
+7	0.085300	0.071624	0.913899	0.215252
+8	0.079800	0.069844	0.907749	0.227552
+9	0.054900	0.064976	0.924969	0.204182
+10	0.075800	0.063394	0.927429	0.244772
+11	0.053800	0.060477	0.923739	0.225092
+12	0.052900	0.060161	0.924969	0.214022
+Evaluando después de fine-tuning...
+{'test_loss': 0.5110623836517334, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.6875, 'test_runtime': 0.5685, 'test_samples_per_second': 56.292, 'test_steps_per_second': 3.518}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [4122/9160 21:27 < 26:13, 3.20 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.401000	0.293016	0.376384	2.280443
+2	0.210600	0.145690	0.769988	0.621156
+3	0.161700	0.118428	0.867159	0.266913
+4	0.141800	0.092693	0.888069	0.237392
+5	0.109200	0.077263	0.886839	0.249692
+6	0.088900	0.066962	0.915129	0.214022
+7	0.078700	0.063533	0.924969	0.195572
+8	0.071200	0.060371	0.915129	0.222632
+9	0.061600	0.057890	0.932349	0.200492
+Evaluando después de fine-tuning...
+{'test_loss': 0.425662636756897, 'test_exact_match': 0.65625, 'test_mean_levenshtein': 0.90625, 'test_runtime': 0.7382, 'test_samples_per_second': 43.349, 'test_steps_per_second': 2.709}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [4580/9160 27:06 < 27:06, 2.82 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.399300	0.296299	0.373924	2.265683
+2	0.211600	0.151528	0.746617	0.741697
+3	0.161500	0.128332	0.869619	0.277983
+4	0.135100	0.099960	0.883149	0.254613
+5	0.099100	0.087322	0.897909	0.222632
+6	0.089200	0.075176	0.906519	0.227552
+7	0.074800	0.071350	0.920049	0.196802
+8	0.070400	0.067864	0.913899	0.212792
+9	0.060700	0.061327	0.928659	0.228782
+10	0.071100	0.059888	0.929889	0.216482
+Evaluando después de fine-tuning...
+{'test_loss': 0.7349956035614014, 'test_exact_match': 0.75, 'test_mean_levenshtein': 0.59375, 'test_runtime': 0.5184, 'test_samples_per_second': 61.725, 'test_steps_per_second': 3.858}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [4580/9160 23:25 < 23:26, 3.26 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.415500	0.296767	0.362854	2.396064
+2	0.212700	0.147155	0.765068	0.676507
+3	0.173300	0.119009	0.863469	0.312423
+4	0.133600	0.094659	0.885609	0.244772
+5	0.109800	0.079200	0.891759	0.257073
+6	0.085000	0.068423	0.911439	0.230012
+7	0.087000	0.065287	0.924969	0.188192
+8	0.061700	0.061993	0.918819	0.216482
+9	0.055600	0.058090	0.933579	0.189422
+10	0.071600	0.057472	0.931119	0.209102
+Evaluando después de fine-tuning...
+{'test_loss': 0.5656060576438904, 'test_exact_match': 0.53125, 'test_mean_levenshtein': 0.8125, 'test_runtime': 0.5951, 'test_samples_per_second': 53.773, 'test_steps_per_second': 3.361}
+Predicciones guardadas en predictions_google_flan-t5-base_real_plus_synthetic_fold5.csv
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	synthetic_only	0.6125	0.86875
+1	google_flan-t5-base	real_plus_synthetic	0.6625	0.66250
+
+
+
+# Modelo: facebook/bart-base #
+model_name:  facebook/bart-base
+model_name_dir:  facebook_bart-base
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [2700/9000 06:22 < 14:53, 7.05 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.236200	0.127035	0.786250	0.500000
+2	0.105200	0.087617	0.867500	0.396250
+3	0.072000	0.081683	0.886250	0.373750
+4	0.054500	0.065208	0.895000	0.341250
+5	0.058900	0.064516	0.893750	0.366250
+6	0.052600	0.058515	0.897500	0.362500
+Evaluando después de fine-tuning...
+{'test_loss': 0.6479669809341431, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.99375, 'test_runtime': 2.0683, 'test_samples_per_second': 77.357, 'test_steps_per_second': 4.835}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [2700/9000 06:25 < 15:00, 7.00 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.236200	0.127035	0.786250	0.500000
+2	0.105200	0.087617	0.867500	0.396250
+3	0.072000	0.081683	0.886250	0.373750
+4	0.054500	0.065208	0.895000	0.341250
+5	0.058900	0.064516	0.893750	0.366250
+6	0.052600	0.058515	0.897500	0.362500
+Evaluando después de fine-tuning...
+{'test_loss': 0.6479669809341431, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.99375, 'test_runtime': 2.0578, 'test_samples_per_second': 77.753, 'test_steps_per_second': 4.86}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [2700/9000 06:20 < 14:49, 7.08 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.236200	0.127035	0.786250	0.500000
+2	0.105200	0.087617	0.867500	0.396250
+3	0.072000	0.081683	0.886250	0.373750
+4	0.054500	0.065208	0.895000	0.341250
+5	0.058900	0.064516	0.893750	0.366250
+6	0.052600	0.058515	0.897500	0.362500
+Evaluando después de fine-tuning...
+{'test_loss': 0.6479669809341431, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.99375, 'test_runtime': 2.1362, 'test_samples_per_second': 74.9, 'test_steps_per_second': 4.681}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [2700/9000 06:23 < 14:54, 7.04 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.236200	0.127035	0.786250	0.500000
+2	0.105200	0.087617	0.867500	0.396250
+3	0.072000	0.081683	0.886250	0.373750
+4	0.054500	0.065208	0.895000	0.341250
+5	0.058900	0.064516	0.893750	0.366250
+6	0.052600	0.058515	0.897500	0.362500
+Evaluando después de fine-tuning...
+{'test_loss': 0.6479669809341431, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.99375, 'test_runtime': 2.1606, 'test_samples_per_second': 74.054, 'test_steps_per_second': 4.628}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [2700/9000 06:28 < 15:07, 6.94 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.236200	0.127035	0.786250	0.500000
+2	0.105200	0.087617	0.867500	0.396250
+3	0.072000	0.081683	0.886250	0.373750
+4	0.054500	0.065208	0.895000	0.341250
+5	0.058900	0.064516	0.893750	0.366250
+6	0.052600	0.058515	0.897500	0.362500
+Evaluando después de fine-tuning...
+{'test_loss': 0.6479669809341431, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.99375, 'test_runtime': 2.0314, 'test_samples_per_second': 78.765, 'test_steps_per_second': 4.923}
+Predicciones guardadas en predictions_facebook_bart-base_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [2748/9160 06:32 < 15:15, 7.00 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.177000	0.131728	0.792128	0.516605
+2	0.142500	0.082202	0.864699	0.369004
+3	0.069700	0.068540	0.910209	0.295203
+4	0.073300	0.060048	0.917589	0.252153
+5	0.048600	0.060143	0.921279	0.276753
+6	0.044500	0.054813	0.931119	0.201722
+Evaluando después de fine-tuning...
+{'test_loss': 0.37478676438331604, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.9375, 'test_runtime': 0.4651, 'test_samples_per_second': 68.797, 'test_steps_per_second': 4.3}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [3206/9160 07:36 < 14:08, 7.02 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.179600	0.137956	0.773678	0.591636
+2	0.127400	0.092184	0.836408	0.496925
+3	0.083800	0.075237	0.913899	0.250923
+4	0.050500	0.068612	0.926199	0.231242
+5	0.042300	0.064520	0.907749	0.238622
+6	0.028400	0.062738	0.924969	0.241082
+7	0.030000	0.066645	0.923739	0.269373
+Evaluando después de fine-tuning...
+{'test_loss': 0.6317636370658875, 'test_exact_match': 0.5, 'test_mean_levenshtein': 0.96875, 'test_runtime': 0.4269, 'test_samples_per_second': 74.96, 'test_steps_per_second': 4.685}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [5038/9160 14:02 < 11:29, 5.98 it/s, Epoch 11/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.161000	0.129824	0.772448	0.563346
+2	0.121600	0.083335	0.864699	0.345633
+3	0.066600	0.068615	0.908979	0.290283
+4	0.058900	0.060758	0.913899	0.253383
+5	0.047600	0.052942	0.927429	0.206642
+6	0.031300	0.054279	0.923739	0.265683
+7	0.034800	0.061270	0.918819	0.284133
+8	0.018100	0.055027	0.943419	0.233702
+9	0.017100	0.054642	0.953260	0.193112
+10	0.014400	0.053754	0.937269	0.220172
+11	0.018400	0.054921	0.943419	0.226322
+Evaluando después de fine-tuning...
+{'test_loss': 0.8074833154678345, 'test_exact_match': 0.65625, 'test_mean_levenshtein': 1.0, 'test_runtime': 0.4748, 'test_samples_per_second': 67.402, 'test_steps_per_second': 4.213}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [3664/9160 08:42 < 13:04, 7.01 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.176300	0.127806	0.774908	0.562116
+2	0.147200	0.088439	0.868389	0.317343
+3	0.084700	0.069384	0.894219	0.316113
+4	0.060700	0.065637	0.900369	0.277983
+5	0.044600	0.061151	0.923739	0.228782
+6	0.035300	0.057783	0.927429	0.209102
+7	0.057900	0.063641	0.922509	0.297663
+8	0.029600	0.057434	0.937269	0.266913
+Evaluando después de fine-tuning...
+{'test_loss': 0.816961407661438, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.65625, 'test_runtime': 0.4653, 'test_samples_per_second': 68.78, 'test_steps_per_second': 4.299}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [4122/9160 09:51 < 12:03, 6.96 it/s, Epoch 9/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.184800	0.130931	0.768758	0.589176
+2	0.146000	0.086807	0.875769	0.296433
+3	0.086600	0.071596	0.906519	0.303813
+4	0.050500	0.061891	0.926199	0.250923
+5	0.045800	0.060373	0.918819	0.230012
+6	0.028800	0.053966	0.937269	0.175892
+7	0.043300	0.061945	0.921279	0.289053
+8	0.017700	0.054436	0.940959	0.241082
+9	0.013500	0.053181	0.942189	0.211562
+Evaluando después de fine-tuning...
+{'test_loss': 0.5029807686805725, 'test_exact_match': 0.71875, 'test_mean_levenshtein': 0.5, 'test_runtime': 0.4416, 'test_samples_per_second': 72.462, 'test_steps_per_second': 4.529}
+Predicciones guardadas en predictions_facebook_bart-base_real_plus_synthetic_fold5.csv
+
+
+
+Model	Data Combination	Average Test Exact Match	Average Test Mean Levenshtein
+0	google_flan-t5-base	synthetic_only	0.61250	0.86875
+1	google_flan-t5-base	real_plus_synthetic	0.66250	0.66250
+2	facebook_bart-base	synthetic_only	0.59375	0.99375
+3	facebook_bart-base	real_plus_synthetic	0.63750	0.81250
+
+
+
+# Modelo: facebook/mbart-large-50-many-to-many-mmt #
+model_name:  facebook/mbart-large-50-many-to-many-mmt
+model_name_dir:  facebook_mbart-large-50-many-to-many-mmt
+
+### Combinación: synthetic_only ###
+
+Procesando pliegue 1
+tokenizer_config.json: 100%
+ 529/529 [00:00<00:00, 42.3kB/s]
+config.json: 100%
+ 1.43k/1.43k [00:00<00:00, 127kB/s]
+sentencepiece.bpe.model: 100%
+ 5.07M/5.07M [00:00<00:00, 84.0MB/s]
+special_tokens_map.json: 100%
+ 649/649 [00:00<00:00, 55.7kB/s]
+model.safetensors: 100%
+ 2.44G/2.44G [00:11<00:00, 228MB/s]
+generation_config.json: 100%
+ 261/261 [00:00<00:00, 20.5kB/s]
+Entrenando el modelo...
+ [3600/9000 30:43 < 46:07, 1.95 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.202900	0.223801	0.786250	0.495000
+2	0.088600	0.179917	0.806250	0.461250
+3	0.068700	0.167086	0.823750	0.481250
+4	0.055400	0.155622	0.841250	0.446250
+5	0.029900	0.154877	0.860000	0.430000
+6	0.025600	0.179268	0.861250	0.350000
+7	0.011900	0.177814	0.862500	0.411250
+8	0.014700	0.174580	0.850000	0.378750
+Evaluando después de fine-tuning...
+{'test_loss': 1.0493745803833008, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.16875, 'test_runtime': 2.9245, 'test_samples_per_second': 54.71, 'test_steps_per_second': 3.419}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [3600/9000 30:38 < 45:59, 1.96 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.202900	0.223801	0.786250	0.495000
+2	0.088600	0.179917	0.806250	0.461250
+3	0.068700	0.167086	0.823750	0.481250
+4	0.055400	0.155622	0.841250	0.446250
+5	0.029900	0.154877	0.860000	0.430000
+6	0.025600	0.179268	0.861250	0.350000
+7	0.011900	0.177814	0.862500	0.411250
+8	0.014700	0.174580	0.850000	0.378750
+Evaluando después de fine-tuning...
+{'test_loss': 1.0493745803833008, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.16875, 'test_runtime': 2.9851, 'test_samples_per_second': 53.6, 'test_steps_per_second': 3.35}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [3600/9000 30:42 < 46:05, 1.95 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.202900	0.223801	0.786250	0.495000
+2	0.088600	0.179917	0.806250	0.461250
+3	0.068700	0.167086	0.823750	0.481250
+4	0.055400	0.155622	0.841250	0.446250
+5	0.029900	0.154877	0.860000	0.430000
+6	0.025600	0.179268	0.861250	0.350000
+7	0.011900	0.177814	0.862500	0.411250
+8	0.014700	0.174580	0.850000	0.378750
+Evaluando después de fine-tuning...
+{'test_loss': 1.0493745803833008, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.16875, 'test_runtime': 2.9718, 'test_samples_per_second': 53.84, 'test_steps_per_second': 3.365}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [3600/9000 30:43 < 46:06, 1.95 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.202900	0.223801	0.786250	0.495000
+2	0.088600	0.179917	0.806250	0.461250
+3	0.068700	0.167086	0.823750	0.481250
+4	0.055400	0.155622	0.841250	0.446250
+5	0.029900	0.154877	0.860000	0.430000
+6	0.025600	0.179268	0.861250	0.350000
+7	0.011900	0.177814	0.862500	0.411250
+8	0.014700	0.174580	0.850000	0.378750
+Evaluando después de fine-tuning...
+{'test_loss': 1.0493745803833008, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.16875, 'test_runtime': 2.9548, 'test_samples_per_second': 54.149, 'test_steps_per_second': 3.384}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [3600/9000 30:41 < 46:03, 1.95 it/s, Epoch 8/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.202900	0.223801	0.786250	0.495000
+2	0.088600	0.179917	0.806250	0.461250
+3	0.068700	0.167086	0.823750	0.481250
+4	0.055400	0.155622	0.841250	0.446250
+5	0.029900	0.154877	0.860000	0.430000
+6	0.025600	0.179268	0.861250	0.350000
+7	0.011900	0.177814	0.862500	0.411250
+8	0.014700	0.174580	0.850000	0.378750
+Evaluando después de fine-tuning...
+{'test_loss': 1.0493745803833008, 'test_exact_match': 0.55625, 'test_mean_levenshtein': 1.16875, 'test_runtime': 2.9831, 'test_samples_per_second': 53.636, 'test_steps_per_second': 3.352}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_synthetic_only_fold5.csv
+
+### Combinación: real_plus_synthetic ###
+
+Procesando pliegue 1
+Entrenando el modelo...
+ [3206/9160 32:02 < 59:33, 1.67 it/s, Epoch 7/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.227000	0.193213	0.798278	0.468635
+2	0.109000	0.153067	0.810578	0.546125
+3	0.083900	0.140010	0.840098	0.455105
+4	0.048500	0.131054	0.869619	0.355474
+5	0.050800	0.145060	0.822878	0.517835
+6	0.029300	0.139120	0.859779	0.397294
+7	0.024500	0.142908	0.830258	0.452645
+Evaluando después de fine-tuning...
+{'test_loss': 0.41054844856262207, 'test_exact_match': 0.625, 'test_mean_levenshtein': 0.75, 'test_runtime': 0.6305, 'test_samples_per_second': 50.75, 'test_steps_per_second': 3.172}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold1.csv
+
+Procesando pliegue 2
+Entrenando el modelo...
+ [4580/9160 41:34 < 41:35, 1.84 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.212600	0.197460	0.814268	0.471095
+2	0.108000	0.169802	0.832718	0.503075
+3	0.080800	0.142007	0.862239	0.373924
+4	0.047100	0.149530	0.858549	0.365314
+5	0.037300	0.144031	0.878229	0.359164
+6	0.029300	0.146653	0.845018	0.473555
+7	0.015000	0.150262	0.895449	0.327183
+8	0.008400	0.157830	0.873309	0.350554
+9	0.009900	0.157953	0.862239	0.373924
+10	0.009300	0.164369	0.864699	0.409594
+Evaluando después de fine-tuning...
+{'test_loss': 1.0399754047393799, 'test_exact_match': 0.40625, 'test_mean_levenshtein': 1.28125, 'test_runtime': 0.5857, 'test_samples_per_second': 54.634, 'test_steps_per_second': 3.415}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold2.csv
+
+Procesando pliegue 3
+Entrenando el modelo...
+ [2748/9160 23:31 < 54:55, 1.95 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.188300	0.189762	0.822878	0.429274
+2	0.105500	0.150281	0.840098	0.477245
+3	0.088500	0.134139	0.873309	0.330873
+4	0.045100	0.133034	0.849938	0.402214
+5	0.056500	0.145231	0.853629	0.391144
+6	0.034500	0.139789	0.864699	0.338253
+Evaluando después de fine-tuning...
+{'test_loss': 0.8865829706192017, 'test_exact_match': 0.46875, 'test_mean_levenshtein': 2.0, 'test_runtime': 0.6165, 'test_samples_per_second': 51.904, 'test_steps_per_second': 3.244}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold3.csv
+
+Procesando pliegue 4
+Entrenando el modelo...
+ [4580/9160 39:03 < 39:04, 1.95 it/s, Epoch 10/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.209000	0.188407	0.806888	0.410824
+2	0.112300	0.152467	0.820418	0.476015
+3	0.091900	0.138704	0.845018	0.394834
+4	0.043200	0.138692	0.859779	0.396064
+5	0.040300	0.140557	0.857319	0.388684
+6	0.036700	0.151795	0.859779	0.381304
+7	0.030000	0.151724	0.889299	0.298893
+8	0.008700	0.152665	0.874539	0.301353
+9	0.017900	0.168180	0.853629	0.362854
+10	0.011200	0.160248	0.863469	0.399754
+Evaluando después de fine-tuning...
+{'test_loss': 1.0272480249404907, 'test_exact_match': 0.59375, 'test_mean_levenshtein': 0.8125, 'test_runtime': 0.5791, 'test_samples_per_second': 55.255, 'test_steps_per_second': 3.453}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold4.csv
+
+Procesando pliegue 5
+Entrenando el modelo...
+ [2748/9160 23:29 < 54:50, 1.95 it/s, Epoch 6/20]
+Epoch	Training Loss	Validation Loss	Exact Match	Mean Levenshtein
+1	0.224500	0.186946	0.806888	0.473555
+2	0.097800	0.148402	0.806888	0.531365
+3	0.094100	0.140633	0.857319	0.388684
+4	0.041200	0.139704	0.840098	0.424354
+5	0.051500	0.147047	0.849938	0.410824
+6	0.023800	0.135216	0.857319	0.404674
+Evaluando después de fine-tuning...
+{'test_loss': 0.8414773941040039, 'test_exact_match': 0.6875, 'test_mean_levenshtein': 0.5, 'test_runtime': 0.6636, 'test_samples_per_second': 48.222, 'test_steps_per_second': 3.014}
+Predicciones guardadas en predictions_facebook_mbart-large-50-many-to-many-mmt_real_plus_synthetic_fold5.csv
+
+

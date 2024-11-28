@@ -1,0 +1,1495 @@
+{
+  "x0": {
+    "google/flan-t5-base": {
+      "real_only": [
+        {
+          "test_loss": 12.305471420288086,
+          "test_exact_match": 0.0625,
+          "test_mean_levenshtein": 5.875,
+          "test_runtime": 0.7138,
+          "test_samples_per_second": 44.831,
+          "test_steps_per_second": 2.802
+        },
+
+        {
+          "test_loss": 13.00007438659668,
+          "test_exact_match": 0.09375,
+          "test_mean_levenshtein": 4.6875,
+          "test_runtime": 0.7103,
+          "test_samples_per_second": 45.052,
+          "test_steps_per_second": 2.816
+        },
+
+        {
+          "test_loss": 15.534027099609375,
+          "test_exact_match": 0.15625,
+          "test_mean_levenshtein": 5.78125,
+          "test_runtime": 0.9436,
+          "test_samples_per_second": 33.912,
+          "test_steps_per_second": 2.12
+        },
+
+        {
+          "test_loss": 14.996427536010742,
+          "test_exact_match": 0.0625,
+          "test_mean_levenshtein": 5.9375,
+          "test_runtime": 0.9085,
+          "test_samples_per_second": 35.224,
+          "test_steps_per_second": 2.201
+        },
+
+        {
+          "test_loss": 5.517871379852295,
+          "test_exact_match": 0.1875,
+          "test_mean_levenshtein": 3.125,
+          "test_runtime": 0.3668,
+          "test_samples_per_second": 87.241,
+          "test_steps_per_second": 5.453
+        }
+      ]
+    },
+    "facebook/bart-base": {
+      "real_only": [
+        {
+          "test_loss": 5.863996982574463,
+          "test_exact_match": 0.1875,
+          "test_mean_levenshtein": 3.5625,
+          "test_runtime": 0.3815,
+          "test_samples_per_second": 83.871,
+          "test_steps_per_second": 5.242
+        },
+
+        {
+          "test_loss": 7.418503284454346,
+          "test_exact_match": 0.09375,
+          "test_mean_levenshtein": 3.3125,
+          "test_runtime": 0.3941,
+          "test_samples_per_second": 81.203,
+          "test_steps_per_second": 5.075
+        },
+
+        {
+          "test_loss": 5.68294620513916,
+          "test_exact_match": 0.25,
+          "test_mean_levenshtein": 2.84375,
+          "test_runtime": 0.3969,
+          "test_samples_per_second": 80.63,
+          "test_steps_per_second": 5.039
+        },
+
+        {
+          "test_loss": 5.897180080413818,
+          "test_exact_match": 0.125,
+          "test_mean_levenshtein": 3.75,
+          "test_runtime": 0.3396,
+          "test_samples_per_second": 94.239,
+          "test_steps_per_second": 5.89
+        },
+
+        {
+          "test_loss": 6.092406272888184,
+          "test_exact_match": 0.21875,
+          "test_mean_levenshtein": 2.65625,
+          "test_runtime": 0.3388,
+          "test_samples_per_second": 94.451,
+          "test_steps_per_second": 5.903
+        }
+      ]
+    },
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "real_only": [
+        {
+          "test_loss": 3.8810391426086426,
+          "test_exact_match": 0.09375,
+          "test_mean_levenshtein": 3.5,
+          "test_runtime": 0.5741,
+          "test_samples_per_second": 55.74,
+          "test_steps_per_second": 3.484
+        },
+        {
+          "test_loss": 2.1678683757781982,
+          "test_exact_match": 0.15625,
+          "test_mean_levenshtein": 2.8125,
+          "test_runtime": 0.6396,
+          "test_samples_per_second": 50.028,
+          "test_steps_per_second": 3.127
+        },
+        {
+          "test_loss": 1.0267102718353271,
+          "test_exact_match": 0.3125,
+          "test_mean_levenshtein": 2.75,
+          "test_runtime": 0.5606,
+          "test_samples_per_second": 57.082,
+          "test_steps_per_second": 3.568
+        },
+        {
+          "test_loss": 0.8034496307373047,
+          "test_exact_match": 0.3125,
+          "test_mean_levenshtein": 2.78125,
+          "test_runtime": 0.5789,
+          "test_samples_per_second": 55.277,
+          "test_steps_per_second": 3.455
+        },
+        {
+          "test_loss": 0.5120119452476501,
+          "test_exact_match": 0.34375,
+          "test_mean_levenshtein": 2.09375,
+          "test_runtime": 0.6041,
+          "test_samples_per_second": 52.975,
+          "test_steps_per_second": 3.311
+        }
+      ]
+    }
+  },
+  "x10": {
+    "google/flan-t5-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.6111589670181274,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 2.5438,
+          "test_samples_per_second": 62.897,
+          "test_steps_per_second": 3.931
+        },
+
+        {
+          "test_loss": 0.6111589670181274,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 2.4953,
+          "test_samples_per_second": 64.12,
+          "test_steps_per_second": 4.008
+        },
+
+        {
+          "test_loss": 0.6111589670181274,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 2.6746,
+          "test_samples_per_second": 59.821,
+          "test_steps_per_second": 3.739
+        },
+
+        {
+          "test_loss": 0.6111589670181274,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 2.6259,
+          "test_samples_per_second": 60.931,
+          "test_steps_per_second": 3.808
+        },
+
+        {
+          "test_loss": 0.6111589670181274,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 2.6053,
+          "test_samples_per_second": 61.413,
+          "test_steps_per_second": 3.838
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.46008870005607605,
+          "test_exact_match": 0.5625,
+          "test_mean_levenshtein": 1.40625,
+          "test_runtime": 0.5179,
+          "test_samples_per_second": 61.792,
+          "test_steps_per_second": 3.862
+        },
+
+        {
+          "test_loss": 0.4151911735534668,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 0.84375,
+          "test_runtime": 0.5732,
+          "test_samples_per_second": 55.831,
+          "test_steps_per_second": 3.489
+        },
+
+        {
+          "test_loss": 0.5162976384162903,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 1.6875,
+          "test_runtime": 0.6575,
+          "test_samples_per_second": 48.672,
+          "test_steps_per_second": 3.042
+        },
+
+        {
+          "test_loss": 0.6992315053939819,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 1.4375,
+          "test_runtime": 0.605,
+          "test_samples_per_second": 52.892,
+          "test_steps_per_second": 3.306
+        },
+
+        {
+          "test_loss": 0.6180862188339233,
+          "test_exact_match": 0.375,
+          "test_mean_levenshtein": 1.21875,
+          "test_runtime": 0.5991,
+          "test_samples_per_second": 53.413,
+          "test_steps_per_second": 3.338
+        }
+      ]
+    },
+    "facebook/bart-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.7619533538818359,
+          "test_exact_match": 0.41875,
+          "test_mean_levenshtein": 1.53125,
+          "test_runtime": 2.25,
+          "test_samples_per_second": 71.112,
+          "test_steps_per_second": 4.445
+        },
+
+        {
+          "test_loss": 0.7619533538818359,
+          "test_exact_match": 0.41875,
+          "test_mean_levenshtein": 1.53125,
+          "test_runtime": 2.2598,
+          "test_samples_per_second": 70.803,
+          "test_steps_per_second": 4.425
+        },
+
+        {
+          "test_loss": 0.7619533538818359,
+          "test_exact_match": 0.41875,
+          "test_mean_levenshtein": 1.53125,
+          "test_runtime": 2.2802,
+          "test_samples_per_second": 70.169,
+          "test_steps_per_second": 4.386
+        },
+
+        {
+          "test_loss": 0.7619533538818359,
+          "test_exact_match": 0.41875,
+          "test_mean_levenshtein": 1.53125,
+          "test_runtime": 2.2796,
+          "test_samples_per_second": 70.186,
+          "test_steps_per_second": 4.387
+        },
+
+        {
+          "test_loss": 0.7619533538818359,
+          "test_exact_match": 0.41875,
+          "test_mean_levenshtein": 1.53125,
+          "test_runtime": 2.1871,
+          "test_samples_per_second": 73.155,
+          "test_steps_per_second": 4.572
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.5651574730873108,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 1.21875,
+          "test_runtime": 0.4619,
+          "test_samples_per_second": 69.284,
+          "test_steps_per_second": 4.33
+        },
+
+        {
+          "test_loss": 0.6299740076065063,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.0625,
+          "test_runtime": 0.4726,
+          "test_samples_per_second": 67.71,
+          "test_steps_per_second": 4.232
+        },
+
+        {
+          "test_loss": 0.7567318081855774,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.375,
+          "test_runtime": 0.4536,
+          "test_samples_per_second": 70.54,
+          "test_steps_per_second": 4.409
+        },
+
+        {
+          "test_loss": 0.9949975609779358,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 2.0,
+          "test_runtime": 0.4853,
+          "test_samples_per_second": 65.937,
+          "test_steps_per_second": 4.121
+        },
+
+        {
+          "test_loss": 0.5770372152328491,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.5,
+          "test_runtime": 0.4855,
+          "test_samples_per_second": 65.914,
+          "test_steps_per_second": 4.12
+        }
+      ]
+    },
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.8014190793037415,
+          "test_exact_match": 0.5125,
+          "test_mean_levenshtein": 1.05625,
+          "test_runtime": 3.0122,
+          "test_samples_per_second": 53.118,
+          "test_steps_per_second": 3.32
+        },
+        {
+          "test_loss": 0.9379762411117554,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.4125,
+          "test_runtime": 3.0656,
+          "test_samples_per_second": 52.193,
+          "test_steps_per_second": 3.262
+        },
+        {
+          "test_loss": 1.043722152709961,
+          "test_exact_match": 0.425,
+          "test_mean_levenshtein": 1.45625,
+          "test_runtime": 3.0456,
+          "test_samples_per_second": 52.535,
+          "test_steps_per_second": 3.283
+        },
+        {
+          "test_loss": 1.135716438293457,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 1.3875,
+          "test_runtime": 3.1801,
+          "test_samples_per_second": 50.312,
+          "test_steps_per_second": 3.145
+        },
+        {
+          "test_loss": 1.1530389785766602,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.525,
+          "test_runtime": 3.183,
+          "test_samples_per_second": 50.267,
+          "test_steps_per_second": 3.142
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.683975875377655,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 1.21875,
+          "test_runtime": 0.6016,
+          "test_samples_per_second": 53.189,
+          "test_steps_per_second": 3.324
+        },
+        {
+          "test_loss": 0.30919742584228516,
+          "test_exact_match": 0.8125,
+          "test_mean_levenshtein": 0.3125,
+          "test_runtime": 0.5856,
+          "test_samples_per_second": 54.642,
+          "test_steps_per_second": 3.415
+        },
+        {
+          "test_loss": 0.22945308685302734,
+          "test_exact_match": 0.8125,
+          "test_mean_levenshtein": 0.34375,
+          "test_runtime": 0.6117,
+          "test_samples_per_second": 52.311,
+          "test_steps_per_second": 3.269
+        },
+        {
+          "test_loss": 0.07766003161668777,
+          "test_exact_match": 0.875,
+          "test_mean_levenshtein": 0.6875,
+          "test_runtime": 0.5724,
+          "test_samples_per_second": 55.906,
+          "test_steps_per_second": 3.494
+        },
+        {
+          "test_loss": 0.12608933448791504,
+          "test_exact_match": 0.90625,
+          "test_mean_levenshtein": 0.15625,
+          "test_runtime": 0.623,
+          "test_samples_per_second": 51.367,
+          "test_steps_per_second": 3.21
+        }
+      ]
+    }
+  },
+  "x20": {
+    "google/flan-t5-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.5789371728897095,
+          "test_exact_match": 0.55,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 2.5087,
+          "test_samples_per_second": 63.778,
+          "test_steps_per_second": 3.986
+        },
+
+        {
+          "test_loss": 0.5789371728897095,
+          "test_exact_match": 0.55,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 2.5057,
+          "test_samples_per_second": 63.855,
+          "test_steps_per_second": 3.991
+        },
+
+        {
+          "test_loss": 0.5789371728897095,
+          "test_exact_match": 0.55,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 2.5978,
+          "test_samples_per_second": 61.591,
+          "test_steps_per_second": 3.849
+        },
+
+        {
+          "test_loss": 0.5789371728897095,
+          "test_exact_match": 0.55,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 2.5006,
+          "test_samples_per_second": 63.984,
+          "test_steps_per_second": 3.999
+        },
+
+        {
+          "test_loss": 0.5789371728897095,
+          "test_exact_match": 0.55,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 2.5078,
+          "test_samples_per_second": 63.801,
+          "test_steps_per_second": 3.988
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.4313269257545471,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.59375,
+          "test_runtime": 0.5493,
+          "test_samples_per_second": 58.251,
+          "test_steps_per_second": 3.641
+        },
+
+        {
+          "test_loss": 0.463081955909729,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 0.96875,
+          "test_runtime": 0.5071,
+          "test_samples_per_second": 63.107,
+          "test_steps_per_second": 3.944
+        },
+
+        {
+          "test_loss": 0.44530361890792847,
+          "test_exact_match": 0.65625,
+          "test_mean_levenshtein": 0.84375,
+          "test_runtime": 0.5795,
+          "test_samples_per_second": 55.216,
+          "test_steps_per_second": 3.451
+        },
+
+        {
+          "test_loss": 0.7041491866111755,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 1.25,
+          "test_runtime": 0.5301,
+          "test_samples_per_second": 60.368,
+          "test_steps_per_second": 3.773
+        },
+
+        {
+          "test_loss": 0.6072677969932556,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 1.09375,
+          "test_runtime": 0.5875,
+          "test_samples_per_second": 54.465,
+          "test_steps_per_second": 3.404
+        }
+      ]
+    },
+    "facebook/bart-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.7209112048149109,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1375,
+          "test_runtime": 2.0274,
+          "test_samples_per_second": 78.917,
+          "test_steps_per_second": 4.932
+        },
+
+        {
+          "test_loss": 0.7209112048149109,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1375,
+          "test_runtime": 2.0332,
+          "test_samples_per_second": 78.695,
+          "test_steps_per_second": 4.918
+        },
+
+        {
+          "test_loss": 0.7209112048149109,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1375,
+          "test_runtime": 2.017,
+          "test_samples_per_second": 79.325,
+          "test_steps_per_second": 4.958
+        },
+
+        {
+          "test_loss": 0.7209112048149109,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1375,
+          "test_runtime": 1.9996,
+          "test_samples_per_second": 80.015,
+          "test_steps_per_second": 5.001
+        },
+
+        {
+          "test_loss": 0.7209112048149109,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1375,
+          "test_runtime": 2.1226,
+          "test_samples_per_second": 75.381,
+          "test_steps_per_second": 4.711
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.5692458152770996,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.46875,
+          "test_runtime": 0.446,
+          "test_samples_per_second": 71.751,
+          "test_steps_per_second": 4.484
+        },
+
+        {
+          "test_loss": 0.602138876914978,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.125,
+          "test_runtime": 0.4477,
+          "test_samples_per_second": 71.476,
+          "test_steps_per_second": 4.467
+        },
+
+        {
+          "test_loss": 0.7248178720474243,
+          "test_exact_match": 0.4375,
+          "test_mean_levenshtein": 1.34375,
+          "test_runtime": 0.4157,
+          "test_samples_per_second": 76.98,
+          "test_steps_per_second": 4.811
+        },
+
+        {
+          "test_loss": 0.7788739204406738,
+          "test_exact_match": 0.6875,
+          "test_mean_levenshtein": 0.84375,
+          "test_runtime": 0.4439,
+          "test_samples_per_second": 72.09,
+          "test_steps_per_second": 4.506
+        },
+
+        {
+          "test_loss": 0.482547402381897,
+          "test_exact_match": 0.65625,
+          "test_mean_levenshtein": 0.71875,
+          "test_runtime": 0.432,
+          "test_samples_per_second": 74.067,
+          "test_steps_per_second": 4.629
+        }
+      ]
+    },
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "synthetic_only": [
+        {
+          "test_loss": 1.0156490802764893,
+          "test_exact_match": 0.4875,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 3.1795,
+          "test_samples_per_second": 50.323,
+          "test_steps_per_second": 3.145
+        },
+        {
+          "test_loss": 1.2997500896453857,
+          "test_exact_match": 0.49375,
+          "test_mean_levenshtein": 1.30625,
+          "test_runtime": 3.1802,
+          "test_samples_per_second": 50.312,
+          "test_steps_per_second": 3.144
+        },
+        {
+          "test_loss": 1.443225622177124,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.1875,
+          "test_runtime": 3.061,
+          "test_samples_per_second": 52.271,
+          "test_steps_per_second": 3.267
+        },
+        {
+          "test_loss": 1.4741491079330444,
+          "test_exact_match": 0.5,
+          "test_mean_levenshtein": 1.29375,
+          "test_runtime": 3.0899,
+          "test_samples_per_second": 51.782,
+          "test_steps_per_second": 3.236
+        },
+        {
+          "test_loss": 1.4730955362319946,
+          "test_exact_match": 0.44375,
+          "test_mean_levenshtein": 1.41875,
+          "test_runtime": 3.0774,
+          "test_samples_per_second": 51.992,
+          "test_steps_per_second": 3.25
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.912290096282959,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 0.6028,
+          "test_samples_per_second": 53.088,
+          "test_steps_per_second": 3.318
+        },
+        {
+          "test_loss": 0.5697614550590515,
+          "test_exact_match": 0.5625,
+          "test_mean_levenshtein": 1.0,
+          "test_runtime": 0.6577,
+          "test_samples_per_second": 48.652,
+          "test_steps_per_second": 3.041
+        },
+        {
+          "test_loss": 0.21182310581207275,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.84375,
+          "test_runtime": 0.5922,
+          "test_samples_per_second": 54.039,
+          "test_steps_per_second": 3.377
+        },
+        {
+          "test_loss": 0.17205290496349335,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.875,
+          "test_runtime": 0.6561,
+          "test_samples_per_second": 48.772,
+          "test_steps_per_second": 3.048
+        },
+        {
+          "test_loss": 0.0732857808470726,
+          "test_exact_match": 0.84375,
+          "test_mean_levenshtein": 0.3125,
+          "test_runtime": 0.6022,
+          "test_samples_per_second": 53.142,
+          "test_steps_per_second": 3.321
+        }
+      ]
+    }
+  },
+  "x30": {
+    "google/flan-t5-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.6979011297225952,
+          "test_exact_match": 0.60625,
+          "test_mean_levenshtein": 0.9125,
+          "test_runtime": 2.4819,
+          "test_samples_per_second": 64.467,
+          "test_steps_per_second": 4.029
+        },
+
+        {
+          "test_loss": 0.6979011297225952,
+          "test_exact_match": 0.60625,
+          "test_mean_levenshtein": 0.9125,
+          "test_runtime": 2.4889,
+          "test_samples_per_second": 64.284,
+          "test_steps_per_second": 4.018
+        },
+
+        {
+          "test_loss": 0.6979011297225952,
+          "test_exact_match": 0.60625,
+          "test_mean_levenshtein": 0.9125,
+          "test_runtime": 2.4525,
+          "test_samples_per_second": 65.24,
+          "test_steps_per_second": 4.077
+        },
+
+        {
+          "test_loss": 0.6979011297225952,
+          "test_exact_match": 0.60625,
+          "test_mean_levenshtein": 0.9125,
+          "test_runtime": 2.4748,
+          "test_samples_per_second": 64.65,
+          "test_steps_per_second": 4.041
+        },
+
+        {
+          "test_loss": 0.6979011297225952,
+          "test_exact_match": 0.60625,
+          "test_mean_levenshtein": 0.9125,
+          "test_runtime": 2.5179,
+          "test_samples_per_second": 63.546,
+          "test_steps_per_second": 3.972
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.4639328122138977,
+          "test_exact_match": 0.6875,
+          "test_mean_levenshtein": 0.65625,
+          "test_runtime": 0.5893,
+          "test_samples_per_second": 54.299,
+          "test_steps_per_second": 3.394
+        },
+
+        {
+          "test_loss": 0.5040387511253357,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 0.5138,
+          "test_samples_per_second": 62.282,
+          "test_steps_per_second": 3.893
+        },
+
+        {
+          "test_loss": 0.48707619309425354,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 1.25,
+          "test_runtime": 0.6078,
+          "test_samples_per_second": 52.646,
+          "test_steps_per_second": 3.29
+        },
+
+        {
+          "test_loss": 0.7237274646759033,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 0.4934,
+          "test_samples_per_second": 64.85,
+          "test_steps_per_second": 4.053
+        },
+
+        {
+          "test_loss": 0.6414145827293396,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 1.25,
+          "test_runtime": 0.5544,
+          "test_samples_per_second": 57.72,
+          "test_steps_per_second": 3.608
+        }
+      ]
+    },
+    "facebook/bart-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.6937204599380493,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.075,
+          "test_runtime": 2.0944,
+          "test_samples_per_second": 76.393,
+          "test_steps_per_second": 4.775
+        },
+
+        {
+          "test_loss": 0.6937204599380493,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.075,
+          "test_runtime": 2.0516,
+          "test_samples_per_second": 77.989,
+          "test_steps_per_second": 4.874
+        },
+
+        {
+          "test_loss": 0.6937204599380493,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.075,
+          "test_runtime": 2.0203,
+          "test_samples_per_second": 79.196,
+          "test_steps_per_second": 4.95
+        },
+
+        {
+          "test_loss": 0.6937204599380493,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.075,
+          "test_runtime": 2.0305,
+          "test_samples_per_second": 78.797,
+          "test_steps_per_second": 4.925
+        },
+
+        {
+          "test_loss": 0.6937204599380493,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.075,
+          "test_runtime": 2.0353,
+          "test_samples_per_second": 78.613,
+          "test_steps_per_second": 4.913
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.47533464431762695,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 1.40625,
+          "test_runtime": 0.4248,
+          "test_samples_per_second": 75.333,
+          "test_steps_per_second": 4.708
+        },
+
+        {
+          "test_loss": 0.46509382128715515,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 1.1875,
+          "test_runtime": 0.4217,
+          "test_samples_per_second": 75.883,
+          "test_steps_per_second": 4.743
+        },
+
+        {
+          "test_loss": 0.7808813452720642,
+          "test_exact_match": 0.5,
+          "test_mean_levenshtein": 1.21875,
+          "test_runtime": 0.4287,
+          "test_samples_per_second": 74.645,
+          "test_steps_per_second": 4.665
+        },
+
+        {
+          "test_loss": 0.6903468370437622,
+          "test_exact_match": 0.75,
+          "test_mean_levenshtein": 0.59375,
+          "test_runtime": 0.4382,
+          "test_samples_per_second": 73.025,
+          "test_steps_per_second": 4.564
+        },
+
+        {
+          "test_loss": 0.6039453744888306,
+          "test_exact_match": 0.65625,
+          "test_mean_levenshtein": 0.5625,
+          "test_runtime": 0.4326,
+          "test_samples_per_second": 73.973,
+          "test_steps_per_second": 4.623
+        }
+      ]
+    },
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "synthetic_only": [
+        {
+          "test_loss": 1.2889068126678467,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 1.175,
+          "test_runtime": 3.1811,
+          "test_samples_per_second": 50.298,
+          "test_steps_per_second": 3.144
+        },
+        {
+          "test_loss": 1.3675768375396729,
+          "test_exact_match": 0.51875,
+          "test_mean_levenshtein": 1.15625,
+          "test_runtime": 3.0892,
+          "test_samples_per_second": 51.793,
+          "test_steps_per_second": 3.237
+        },
+        {
+          "test_loss": 1.4615952968597412,
+          "test_exact_match": 0.54375,
+          "test_mean_levenshtein": 1.06875,
+          "test_runtime": 2.9784,
+          "test_samples_per_second": 53.72,
+          "test_steps_per_second": 3.357
+        },
+        {
+          "test_loss": 1.4105756282806396,
+          "test_exact_match": 0.5375,
+          "test_mean_levenshtein": 1.24375,
+          "test_runtime": 3.1505,
+          "test_samples_per_second": 50.786,
+          "test_steps_per_second": 3.174
+        },
+        {
+          "test_loss": 1.4933497905731201,
+          "test_exact_match": 0.5375,
+          "test_mean_levenshtein": 1.30625,
+          "test_runtime": 3.1011,
+          "test_samples_per_second": 51.594,
+          "test_steps_per_second": 3.225
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.8806143999099731,
+          "test_exact_match": 0.5,
+          "test_mean_levenshtein": 1.375,
+          "test_runtime": 0.5832,
+          "test_samples_per_second": 54.874,
+          "test_steps_per_second": 3.43
+        },
+        {
+          "test_loss": 0.30041152238845825,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 1.6875,
+          "test_runtime": 1.008,
+          "test_samples_per_second": 31.746,
+          "test_steps_per_second": 1.984
+        },
+        {
+          "test_loss": 0.32184338569641113,
+          "test_exact_match": 0.84375,
+          "test_mean_levenshtein": 0.40625,
+          "test_runtime": 0.5544,
+          "test_samples_per_second": 57.72,
+          "test_steps_per_second": 3.608
+        },
+        {
+          "test_loss": 0.24326427280902863,
+          "test_exact_match": 0.8125,
+          "test_mean_levenshtein": 0.59375,
+          "test_runtime": 0.5665,
+          "test_samples_per_second": 56.485,
+          "test_steps_per_second": 3.53
+        },
+        {
+          "test_loss": 0.09534136205911636,
+          "test_exact_match": 0.90625,
+          "test_mean_levenshtein": 0.25,
+          "test_runtime": 0.5944,
+          "test_samples_per_second": 53.838,
+          "test_steps_per_second": 3.365
+        }
+      ]
+    }
+  },
+  "x50": {
+    "google/flan-t5-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.594288170337677,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.86875,
+          "test_runtime": 2.3943,
+          "test_samples_per_second": 66.825,
+          "test_steps_per_second": 4.177
+        },
+        {
+          "test_loss": 0.594288170337677,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.86875,
+          "test_runtime": 2.4304,
+          "test_samples_per_second": 65.832,
+          "test_steps_per_second": 4.115
+        },
+        {
+          "test_loss": 0.594288170337677,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.86875,
+          "test_runtime": 2.4237,
+          "test_samples_per_second": 66.016,
+          "test_steps_per_second": 4.126
+        },
+        {
+          "test_loss": 0.594288170337677,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.86875,
+          "test_runtime": 2.4321,
+          "test_samples_per_second": 65.787,
+          "test_steps_per_second": 4.112
+        },
+        {
+          "test_loss": 0.594288170337677,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.86875,
+          "test_runtime": 2.3724,
+          "test_samples_per_second": 67.443,
+          "test_steps_per_second": 4.215
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.33075594902038574,
+          "test_exact_match": 0.78125,
+          "test_mean_levenshtein": 0.3125,
+          "test_runtime": 0.6104,
+          "test_samples_per_second": 52.422,
+          "test_steps_per_second": 3.276
+        },
+        {
+          "test_loss": 0.5110623836517334,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.6875,
+          "test_runtime": 0.5685,
+          "test_samples_per_second": 56.292,
+          "test_steps_per_second": 3.518
+        },
+        {
+          "test_loss": 0.425662636756897,
+          "test_exact_match": 0.65625,
+          "test_mean_levenshtein": 0.90625,
+          "test_runtime": 0.7382,
+          "test_samples_per_second": 43.349,
+          "test_steps_per_second": 2.709
+        },
+        {
+          "test_loss": 0.7349956035614014,
+          "test_exact_match": 0.75,
+          "test_mean_levenshtein": 0.59375,
+          "test_runtime": 0.5184,
+          "test_samples_per_second": 61.725,
+          "test_steps_per_second": 3.858
+        },
+        {
+          "test_loss": 0.5656060576438904,
+          "test_exact_match": 0.53125,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 0.5951,
+          "test_samples_per_second": 53.773,
+          "test_steps_per_second": 3.361
+        }
+      ]
+    },
+    "facebook/bart-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.6479669809341431,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.0683,
+          "test_samples_per_second": 77.357,
+          "test_steps_per_second": 4.835
+        },
+        {
+          "test_loss": 0.6479669809341431,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.0578,
+          "test_samples_per_second": 77.753,
+          "test_steps_per_second": 4.86
+        },
+        {
+          "test_loss": 0.6479669809341431,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.1362,
+          "test_samples_per_second": 74.9,
+          "test_steps_per_second": 4.681
+        },
+        {
+          "test_loss": 0.6479669809341431,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.1606,
+          "test_samples_per_second": 74.054,
+          "test_steps_per_second": 4.628
+        },
+        {
+          "test_loss": 0.6479669809341431,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.0314,
+          "test_samples_per_second": 78.765,
+          "test_steps_per_second": 4.923
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.37478676438331604,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.9375,
+          "test_runtime": 0.4651,
+          "test_samples_per_second": 68.797,
+          "test_steps_per_second": 4.3
+        },
+        {
+          "test_loss": 0.6317636370658875,
+          "test_exact_match": 0.5,
+          "test_mean_levenshtein": 0.96875,
+          "test_runtime": 0.4269,
+          "test_samples_per_second": 74.96,
+          "test_steps_per_second": 4.685
+        },
+        {
+          "test_loss": 0.8074833154678345,
+          "test_exact_match": 0.65625,
+          "test_mean_levenshtein": 1.0,
+          "test_runtime": 0.4748,
+          "test_samples_per_second": 67.402,
+          "test_steps_per_second": 4.213
+        },
+        {
+          "test_loss": 0.816961407661438,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.65625,
+          "test_runtime": 0.4653,
+          "test_samples_per_second": 68.78,
+          "test_steps_per_second": 4.299
+        },
+        {
+          "test_loss": 0.5029807686805725,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.5,
+          "test_runtime": 0.4416,
+          "test_samples_per_second": 72.462,
+          "test_steps_per_second": 4.529
+        }
+      ]
+    },
+
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "synthetic_only": [
+        {
+          "test_loss": 1.0493745803833008,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.16875,
+          "test_runtime": 2.9245,
+          "test_samples_per_second": 54.71,
+          "test_steps_per_second": 3.419
+        },
+        {
+          "test_loss": 1.0493745803833008,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.16875,
+          "test_runtime": 2.9851,
+          "test_samples_per_second": 53.6,
+          "test_steps_per_second": 3.35
+        },
+        {
+          "test_loss": 1.0493745803833008,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.16875,
+          "test_runtime": 2.9718,
+          "test_samples_per_second": 53.84,
+          "test_steps_per_second": 3.365
+        },
+        {
+          "test_loss": 1.0493745803833008,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.16875,
+          "test_runtime": 2.9548,
+          "test_samples_per_second": 54.149,
+          "test_steps_per_second": 3.384
+        },
+        {
+          "test_loss": 1.0493745803833008,
+          "test_exact_match": 0.55625,
+          "test_mean_levenshtein": 1.16875,
+          "test_runtime": 2.9831,
+          "test_samples_per_second": 53.636,
+          "test_steps_per_second": 3.352
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.41054844856262207,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 0.75,
+          "test_runtime": 0.6305,
+          "test_samples_per_second": 50.75,
+          "test_steps_per_second": 3.172
+        },
+        {
+          "test_loss": 1.0399754047393799,
+          "test_exact_match": 0.40625,
+          "test_mean_levenshtein": 1.28125,
+          "test_runtime": 0.5857,
+          "test_samples_per_second": 54.634,
+          "test_steps_per_second": 3.415
+        },
+        {
+          "test_loss": 0.8865829706192017,
+          "test_exact_match": 0.46875,
+          "test_mean_levenshtein": 2.0,
+          "test_runtime": 0.6165,
+          "test_samples_per_second": 51.904,
+          "test_steps_per_second": 3.244
+        },
+        {
+          "test_loss": 1.0272480249404907,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 0.5791,
+          "test_samples_per_second": 55.255,
+          "test_steps_per_second": 3.453
+        },
+        {
+          "test_loss": 0.8414773941040039,
+          "test_exact_match": 0.6875,
+          "test_mean_levenshtein": 0.5,
+          "test_runtime": 0.6636,
+          "test_samples_per_second": 48.222,
+          "test_steps_per_second": 3.014
+        }
+      ]
+    }
+  },
+  "x100": {
+    "facebook/mbart-large-50-many-to-many-mmt": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.8940883874893188,
+          "test_exact_match": 0.59375,
+          "test_mean_levenshtein": 0.93125,
+          "test_runtime": 3.1002,
+          "test_samples_per_second": 51.609,
+          "test_steps_per_second": 3.226
+        },
+        {
+          "test_loss": 1.186885952949524,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 0.88125,
+          "test_runtime": 3.1687,
+          "test_samples_per_second": 50.494,
+          "test_steps_per_second": 3.156
+        },
+        {
+          "test_loss": 1.1327393054962158,
+          "test_exact_match": 0.5375,
+          "test_mean_levenshtein": 1.10625,
+          "test_runtime": 2.9671,
+          "test_samples_per_second": 53.925,
+          "test_steps_per_second": 3.37
+        },
+        {
+          "test_loss": 1.1485984325408936,
+          "test_exact_match": 0.6125,
+          "test_mean_levenshtein": 1.025,
+          "test_runtime": 3.0427,
+          "test_samples_per_second": 52.585,
+          "test_steps_per_second": 3.287
+        },
+        {
+          "test_loss": 1.1358283758163452,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 1.0625,
+          "test_runtime": 3.1925,
+          "test_samples_per_second": 50.118,
+          "test_steps_per_second": 3.132
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.5633675456047058,
+          "test_exact_match": 0.78125,
+          "test_mean_levenshtein": 0.90625,
+          "test_runtime": 0.59,
+          "test_samples_per_second": 54.24,
+          "test_steps_per_second": 3.39
+        },
+        {
+          "test_loss": 0.2831754684448242,
+          "test_exact_match": 0.75,
+          "test_mean_levenshtein": 0.59375,
+          "test_runtime": 0.5932,
+          "test_samples_per_second": 53.941,
+          "test_steps_per_second": 3.371
+        },
+        {
+          "test_loss": 0.22306032478809357,
+          "test_exact_match": 0.78125,
+          "test_mean_levenshtein": 0.65625,
+          "test_runtime": 0.617,
+          "test_samples_per_second": 51.861,
+          "test_steps_per_second": 3.241
+        },
+        {
+          "test_loss": 0.2961767017841339,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 0.7365,
+          "test_samples_per_second": 43.448,
+          "test_steps_per_second": 2.715
+        },
+        {
+          "test_loss": 0.1102663204073906,
+          "test_exact_match": 0.84375,
+          "test_mean_levenshtein": 0.34375,
+          "test_runtime": 0.6309,
+          "test_samples_per_second": 50.722,
+          "test_steps_per_second": 3.17
+        }
+      ]
+    },
+
+    "facebook/bart-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.7090095281600952,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 1.1875,
+          "test_runtime": 2.1695,
+          "test_samples_per_second": 73.749,
+          "test_steps_per_second": 4.609
+        },
+        {
+          "test_loss": 0.7994321584701538,
+          "test_exact_match": 0.6625,
+          "test_mean_levenshtein": 0.9875,
+          "test_runtime": 2.1318,
+          "test_samples_per_second": 75.052,
+          "test_steps_per_second": 4.691
+        },
+        {
+          "test_loss": 0.8219757080078125,
+          "test_exact_match": 0.63125,
+          "test_mean_levenshtein": 0.99375,
+          "test_runtime": 2.2351,
+          "test_samples_per_second": 71.584,
+          "test_steps_per_second": 4.474
+        },
+        {
+          "test_loss": 0.7701893448829651,
+          "test_exact_match": 0.64375,
+          "test_mean_levenshtein": 0.94375,
+          "test_runtime": 2.1536,
+          "test_samples_per_second": 74.294,
+          "test_steps_per_second": 4.643
+        },
+        {
+          "test_loss": 0.7950208187103271,
+          "test_exact_match": 0.675,
+          "test_mean_levenshtein": 0.95,
+          "test_runtime": 2.1559,
+          "test_samples_per_second": 74.215,
+          "test_steps_per_second": 4.638
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.6058989763259888,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.78125,
+          "test_runtime": 0.4934,
+          "test_samples_per_second": 64.858,
+          "test_steps_per_second": 4.054
+        },
+        {
+          "test_loss": 0.3063327670097351,
+          "test_exact_match": 0.625,
+          "test_mean_levenshtein": 0.875,
+          "test_runtime": 0.4671,
+          "test_samples_per_second": 68.501,
+          "test_steps_per_second": 4.281
+        },
+        {
+          "test_loss": 0.280512273311615,
+          "test_exact_match": 0.84375,
+          "test_mean_levenshtein": 0.34375,
+          "test_runtime": 0.4509,
+          "test_samples_per_second": 70.975,
+          "test_steps_per_second": 4.436
+        },
+        {
+          "test_loss": 0.1767597794532776,
+          "test_exact_match": 0.875,
+          "test_mean_levenshtein": 0.5625,
+          "test_runtime": 0.4484,
+          "test_samples_per_second": 71.364,
+          "test_steps_per_second": 4.46
+        },
+        {
+          "test_loss": 0.11137083917856216,
+          "test_exact_match": 0.8125,
+          "test_mean_levenshtein": 0.34375,
+          "test_runtime": 0.4625,
+          "test_samples_per_second": 69.195,
+          "test_steps_per_second": 4.325
+        }
+      ]
+    },
+
+    "google/flan-t5-base": {
+      "synthetic_only": [
+        {
+          "test_loss": 0.57915198802948,
+          "test_exact_match": 0.675,
+          "test_mean_levenshtein": 0.6875,
+          "test_runtime": 2.586,
+          "test_samples_per_second": 61.871,
+          "test_steps_per_second": 3.867
+        },
+        {
+          "test_loss": 0.6506195068359375,
+          "test_exact_match": 0.68125,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 2.5424,
+          "test_samples_per_second": 62.932,
+          "test_steps_per_second": 3.933
+        },
+        {
+          "test_loss": 0.805328369140625,
+          "test_exact_match": 0.6875,
+          "test_mean_levenshtein": 0.7125,
+          "test_runtime": 2.6309,
+          "test_samples_per_second": 60.817,
+          "test_steps_per_second": 3.801
+        },
+        {
+          "test_loss": 0.8477708697319031,
+          "test_exact_match": 0.7,
+          "test_mean_levenshtein": 0.7375,
+          "test_runtime": 2.6237,
+          "test_samples_per_second": 60.983,
+          "test_steps_per_second": 3.811
+        },
+        {
+          "test_loss": 0.8713927268981934,
+          "test_exact_match": 0.675,
+          "test_mean_levenshtein": 0.8125,
+          "test_runtime": 2.5804,
+          "test_samples_per_second": 62.006,
+          "test_steps_per_second": 3.875
+        }
+      ],
+      "real_plus_synthetic": [
+        {
+          "test_loss": 0.4540347158908844,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.6875,
+          "test_runtime": 0.6341,
+          "test_samples_per_second": 50.468,
+          "test_steps_per_second": 3.154
+        },
+        {
+          "test_loss": 0.2698422074317932,
+          "test_exact_match": 0.6875,
+          "test_mean_levenshtein": 0.53125,
+          "test_runtime": 0.5539,
+          "test_samples_per_second": 57.774,
+          "test_steps_per_second": 3.611
+        },
+        {
+          "test_loss": 0.0965341106057167,
+          "test_exact_match": 0.71875,
+          "test_mean_levenshtein": 0.5,
+          "test_runtime": 0.6645,
+          "test_samples_per_second": 48.153,
+          "test_steps_per_second": 3.01
+        },
+        {
+          "test_loss": 0.09910031408071518,
+          "test_exact_match": 0.84375,
+          "test_mean_levenshtein": 0.5,
+          "test_runtime": 0.5116,
+          "test_samples_per_second": 62.548,
+          "test_steps_per_second": 3.909
+        },
+        {
+          "test_loss": 0.19325706362724304,
+          "test_exact_match": 0.78125,
+          "test_mean_levenshtein": 0.3125,
+          "test_runtime": 0.6418,
+          "test_samples_per_second": 49.86,
+          "test_steps_per_second": 3.116
+        }
+      ]
+    }
+  }
+}

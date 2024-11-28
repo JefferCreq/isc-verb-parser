@@ -1,0 +1,161 @@
+Input	Target	Prediction	Levenshtein Distance	Exact Match
+pi;V;PFV	pia	pia	0	1
+pi;V;IPFV;NEG	pimai	pimai	0	1
+pi;V;PAS.REM.HAB;ASOC	pikin	pikin	0	1
+pi;V;PFV;PST.days	pishina	pishina	0	1
+pi;V;PFV;MAL	piaran	piarana	1	0
+pi;V;HAB_A;PFV	pimisa	pimisa	0	1
+pi;V;PFV;PST.yesterday	piyantana	piyantana	0	1
+pi;V;DES;REF.S/A>S	pikitsi iki	pikatsi iki	1	0
+pi;V;PFV;MOV.VEN	piberana	piberana	0	1
+pi;V;PFV;MOV.VEN	pipiberana	piberana	2	0
+pi;V;TR;PFV;MOV.ANDA	pibaina	pibaina	0	1
+pi;V;TR;PFV;MOV.ANDA	pipibaina	pibaina	2	0
+pi;V;TR;PFV;MOV.around	pibokona	pibokona	0	1
+pi;V;PFV;MOV.passing	pikawana	pikawana	0	1
+pi;V;PFV;MOV.down	pipakea	pipakea	0	1
+pi;V;IPFV;MOV.ITER	pipatansi	pipatansi	0	1
+pi;V;PFV;MOV.DUR	pibota	pibota	0	1
+pi;V;PFV;MOV.goto	pitana	pitana	0	1
+pi;V;PFV;MOV.arrive	pitoshia	pitoshia	0	1
+pi;V;PST.days;NEG	pimashina	pimashina	0	1
+pi;V;PFV;NEG.FRUS	pikeana	pikeana	0	1
+pi;V;PST.REM	pipaoni	pipaoni	0	1
+pi;V;IMP;NEG	pimakin	pimakin	0	1
+pi;V;INTR;REF.S/A>S	piah	piah	0	1
+pi;V;PST.yesterday;DES	pipaiyantankin	pipaiyantankin	0	1
+kai;V;IPFV	kai	kai	0	1
+kai;V;TR;REF.S/A>A	kahon	kahon	0	1
+kai;V;PRG;IPFV	kaisi	kaisi	0	1
+kai;V;FUT.INM	kanonkota	kanonkota	0	1
+kai;V;PFV;DUAL	karabea	karabea	0	1
+kai;V;TR;REF.S/A>A	kakin	kahon	2	0
+kats;V;EST	katsa	katsa	0	1
+kai;V;PFV	ka	ka	0	1
+kai;V;PFV;DIM	kahakoa	kahakoa	0	1
+oini;V;PFV	oina	oina	0	1
+oini;V;HAB_A;IPFV	oins oinsi	oinkoinsi	2	0
+oini;V;IPFV	oini	oini	0	1
+oini;V;REF.S/A>S	oinah	oinah	0	1
+oini;V;IPFV	oins oinsi	oini	6	0
+oini;V;REF.S/A>S	oini	oinah	2	0
+oini;V;TR;CAU	oinmakin	oinmakin	0	1
+aki;V;PFV;ASOC	akian	akian	0	1
+aki;V;PFV	aka	aka	0	1
+aki;V;PFV;BEN	ahona	ahona	0	1
+aki;V;IPFV;REF.S/A>S	aki iki	aki iki	0	1
+aki;V;PST.REM	apaoni	apaoni	0	1
+aki;V;NEG.yet	ayohma	ayohma	0	1
+aki;V;TR;REF.S/A>A	akin	ahon	2	0
+aki;V;PST.REM	apaonike	apaoni	2	0
+aki;V;IPFV	aki	aki	0	1
+aki;V;TR	akin	ahon	2	0
+ohai;V;IPFV	ohai	ohai	0	1
+ohai;V;IPFV;CAU	ohmai	ohmai	0	1
+ohai;V;HAB_A	ohamis	ohamis	0	1
+ohai;V;IPFV;FUT.INM;REF.S/A>S	ohai kai	ohai kai	0	1
+ohai;V;IPFV;DUB	ohabirai	ohabirai	0	1
+ohai;V;IPFV;ASER;REF.S/A>S	ohakoinsi kai	ohakoinsi kai	0	1
+ohai;V;DES;REF.S/A>S	ohakatsi iki	ohakatsi iki	0	1
+ohai;V;PFV;DIM	ohahakoa	ohahakoa	0	1
+ohai;V;INTR;PFV;MOV.VEN	ohakerana	ohakerana	0	1
+ohai;V;INTR;PFV;MOV.ANDA	ohakaina	ohakaina	0	1
+ohai;V;PFV;MOV.up	ohaina	ohaina	0	1
+choki;V;INTR;PFV;MOV.VEN	chokikerana	chokikerana	0	1
+choki;V;IPFV	choki	choki	0	1
+choki;V;IPFV;ASOC	chukikini	chukikini	0	1
+chokai;V;IPFV	chokai	chokai	0	1
+choron;V;INTR;PFV;MOV.around	choronakea	choronakea	0	1
+choron;V;PFV;MOV.passing	choronkawana	choronkawana	0	1
+choron;V;PFV;MOV.down	choronpakea	choronpakea	0	1
+ayai;V;PFV	aia	aia	0	1
+ayai;V;PFV;DIM;MAL	ayaaranhakoa	ayaaranhakoa	0	1
+ayai;V;PFV;MOV.up	ayaina	ayaina	0	1
+ayai;V;PST.days;NEG	ayayamashina	ayayamashina	0	1
+ayai;V;NEG.never	ayayohma	ayayohma	0	1
+ayai;V;IPFV	ayai	ayai	0	1
+ayai;V;PFV;CAU;MAL	aiamakarana	aiamakarana	0	1
+ayai;V;PFV;MAL	aiarana	aiarana	0	1
+rete;V;PFV	retea	retea	0	1
+senwei;V;PFV	senwea	senwea	0	1
+senwei;V;TR;PFV;MOV.VEN	senweberana	senweberana	0	1
+senwei;V;TR;PFV;MOV.VEN;MAL	senweraberana	senweraberana	0	1
+senwei;V;PFV;REC	senweanan	senweanan	0	1
+oi;V;PFV	oa	oa	0	1
+oi;V;REF.S/A>S	oah	oah	0	1
+oi;V;IPFV	oi	oi	0	1
+yama;V;PRG;EST	yamasa	yamasa	0	1
+yamasa;V;EST;PST.days;NEG	yamasa ishina	yamasa ishina	0	1
+yamasa;V;EST;NEG	yamasa	yamasa	0	1
+nokoi;V;PFV	nokoa	nokoa	0	1
+ewea;V;PFV	ewea	ewea	0	1
+ewea;V;PST.yet	ewe eweri	ewe eweri	0	1
+ewea;V;PST.REM;REF.S/A>S	eweniah	eweniah	0	1
+ewea;V;PFV;PAS.REM.DUR	ewehenia	ewehenia	0	1
+beni beni ik;V;IPFV	beni beni iki	beni beni iki	0	1
+beni beni ik;V;PFV	beni beni ia	beni beni ia	0	1
+beni beni ik;V;PFV;CAU	beni beni ima	beni beni ima	0	1
+mini;V;IPFV	mini	mini	0	1
+mini;V;PFV	minia	minia	0	1
+kesai;V;IPFV	kesai	kesai	0	1
+kesai;V;IPFV;NEG	kesayamai	kesayamai	0	1
+kesai;V;PFV	kesa	kesa	0	1
+metsinki;V;IPFV	metsinki	metsinki	0	1
+iki;V;PFV;PST.days	ishina	ishina	0	1
+iki;V;IPFV	iki	iki	0	1
+iki;V;TR;REF.S/A>A	ihon	ihon	0	1
+mehoi;V;PFV	mehoa	mehoa	0	1
+sawei;V;IPFV	saweai	sawei	1	0
+wai aki;V;EST;HAB_M	waianaka	waianaka	0	1
+wai aki;V;PFV	wai aka	wai aka	0	1
+pakei;V;IPFV	pakei	pakei	0	1
+pakei;V;IPFV;CAU	pakemai	pakemai	0	1
+yoi;V;IPFV	yoi	yoi	0	1
+poi;V;IPFV	poi	poi	0	1
+achi;V;PFV;PL	achiabo	achiabo	0	1
+banai;V;TR;REF.S/A>A	banahon	banahon	0	1
+banai;V;PST.DUR	banabai	banabai	0	1
+banai;V;PFV;PST.days	banashina	banashina	0	1
+mabain;V;IPFV	mabain	mabain	0	1
+kiwi;V;PFV	kiwa	kiwa	0	1
+kiwi;V;IPFV	kiwi	kiwi	0	1
+hohoi;V;PFV	hohoa	hohoa	0	1
+hohoi;V;IPFV	hohoi	hohoi	0	1
+bi;V;PFV	bia	bia	0	1
+ratei;V;PST.REM;DIM	ratehekoni	ratehekoni	0	1
+ratei;V;IPFV;DIM	ratehekoi	ratehekoi	0	1
+beni;V;PFV	benia	benia	0	1
+paear;V;PFV	paean	paean	0	1
+otsia;V;PFV	otsina	otsia	1	0
+otsia;V;PFV;CAU	otsima	otsima	0	1
+nane;V;TR;REF.S/A>A	nanehon	nanehon	0	1
+pichain;V;IPFV	pichai	pichai	0	1
+noia;V;HAB_A;IPFV;ENF	noikoinsi	noikoinsi	0	1
+noia;V;PFV	noia	noia	0	1
+kenai;V;PFV	kena	kena	0	1
+bei;V;PFV	bea	bea	0	1
+boi;V;DES;REF.S/A>S	boankatsi iki	boankatsi iki	0	1
+boi;V;MAL	boanrana	boanrana	0	1
+boi;V;IPFV;PL	bokani	bokani	0	1
+moin;V;PFV	moa	moa	0	1
+tewe tewe iki;V;IPFV	tewe tewe iki	tewe tewe iki	0	1
+shinain;V;PST.REM;REC	shinananpaoni	shinananpaoni	0	1
+manai;V;IPFV	manai	manai	0	1
+tsekai;V;PFV	tsekake	tseka	2	0
+rani;V;EST	rania	ransa	1	0
+yoishiki;V;EST	yoishika	yoishika	0	1
+bewa;V;EST	bewa	bewa	0	1
+pian aki;V;PFV	pian aka	pian aka	0	1
+rakai;V;EST;PL	rakabotana	rakabotana	0	1
+potai;V;PFV;MOV.down	potapakea	potapakea	0	1
+heai;V;PFV	hea	hea	0	1
+mehai;V;EST;HAB_M	mehanaka	mehanaka	0	1
+heri heri iki;V;IPFV	heri heri iki	heri heri iki	0	1
+pari pari iki;V;IPFV	pari	pari pari iki	9	0
+imatai;V;IPFV	imatai	imatai	0	1
+inai;V;PFV	inai	ina	1	0
+iná aki;V;TR;REF.S/A>A	inahon	inahon	0	1
+ni;V;PFV;PST.days	nishina	nishina	0	1
+achimai;V;IPFV;CAU	achimai	achimai	0	1
+mahkai;V;INTR;PFV;NEG.FRUS	mahkakoana	mahkakoana	0	1
+neai;V;PFV	nea	nea	0	1

@@ -1,0 +1,161 @@
+Root	Predicted	Correct	Exact Match	Levenshtein Distance
+pi	pia	pia	1	0
+pi	mai	pimai	0	2
+pi	pi	pikin	0	3
+pi	pi shina	pishina	0	1
+pi	makarana	piaran	0	4
+pi	misa	pimisa	0	2
+pi	piyantana	piyantana	1	0
+pi	katsi iki	pikitsi iki	0	3
+pi	kerana	piberana	0	3
+pi	kawana	pipiberana	0	7
+pi	kaina	pibaina	0	3
+pi	kaina	pipibaina	0	5
+pi	kobona	pibokona	0	4
+pi	kawana	pikawana	0	2
+pi	pakea	pipakea	0	2
+pi	kawana	pipatansi	0	6
+pi	pi mis	pibota	0	4
+pi	tana	pitana	0	2
+pi	toshia	pitoshia	0	2
+pi	pashina	pimashina	0	2
+pi	keana	pikeana	0	2
+pi	niah	pipaoni	0	5
+pi	ma	pimakin	0	5
+pi	ake	piah	0	4
+pi	toshia	pipaiyantankin	0	12
+kai	kai	kai	1	0
+kai	kai	kahon	0	3
+kai	kaisi	kaisi	1	0
+kai	ikai	kanonkota	0	8
+kai	kai	karabea	0	5
+kai	kai	kakin	0	2
+kats	kats	katsa	0	1
+kai	kai	ka	0	1
+kai	kakoa	kahakoa	0	2
+oini	oni	oina	0	2
+oini	okinisi	oins oinsi	0	5
+oini	oini	oini	1	0
+oini	oikoni	oinah	0	4
+oini	oini	oins oinsi	0	6
+oini	koinsi kai	oini	0	6
+oini	oina	oinmakin	0	4
+aki	akian	akian	1	0
+aki	akia	aka	0	1
+aki	hona	ahona	0	1
+aki	aki i iki	aki iki	0	2
+aki	niah	apaoni	0	5
+aki	akirama	ayohma	0	4
+aki	ah	akin	0	3
+aki	niah	apaonike	0	6
+aki	aki	aki	1	0
+aki	akerana	akin	0	4
+ohai	ohai	ohai	1	0
+ohai	ohai	ohmai	0	1
+ohai	ohimis	ohamis	0	1
+ohai	i kai	ohai kai	0	3
+ohai	ohirai	ohabirai	0	2
+ohai	koinsi kai	ohakoinsi kai	0	3
+ohai	katsi iki	ohakatsi iki	0	3
+ohai	hakoa	ohahakoa	0	3
+ohai	kerana	ohakerana	0	3
+ohai	kaina	ohakaina	0	3
+ohai	ina	ohaina	0	3
+choki	kerana	chokikerana	0	5
+choki	kochi	choki	0	4
+choki	kini	chukikini	0	5
+chokai	kai	chokai	0	3
+choron	akerona	choronakea	0	6
+choron	kawana	choronkawana	0	6
+choron	kawana	choronpakea	0	9
+ayai	ayaia	aia	0	2
+ayai	hakoa	ayaaranhakoa	0	7
+ayai	ina	ayaina	0	3
+ayai	mashina	ayayamashina	0	5
+ayai	ayama	ayayohma	0	3
+ayai	ayai	ayai	1	0
+ayai	makarana	aiamakarana	0	3
+ayai	makarana	aiarana	0	2
+rete	retea	retea	1	0
+senwei	senwei	senwea	0	1
+senwei	berana	senweberana	0	5
+senwei	raberana	senweraberana	0	5
+senwei	anan	senweanan	0	5
+oi	oi oia	oa	0	4
+oi	koinsi iki	oah	0	9
+oi	oi	oi	1	0
+yama	yasa	yamasa	0	2
+yamasa	yamashina	yamasa ishina	0	4
+yamasa	katsi	yamasa	0	4
+nokoi	nokoa	nokoa	1	0
+ewea	ewa	ewea	0	1
+ewea	ewa	ewe eweri	0	7
+ewea	niah	eweniah	0	3
+ewea	hekena	ewehenia	0	4
+beni beni ik	kani	beni beni iki	0	11
+beni beni ik	beni kai	beni beni ia	0	6
+beni beni ik	maka	beni beni ima	0	12
+mini	mini	mini	1	0
+mini	minia	minia	1	0
+kesai	kesai	kesai	1	0
+kesai	kesai	kesayamai	0	4
+kesai	kesai	kesa	0	1
+metsinki	metsi	metsinki	0	3
+iki	ikishina	ishina	0	2
+iki	iki	iki	1	0
+iki	ahi	ihon	0	3
+mehoi	mehoi	mehoa	0	1
+sawei	sawei sawei	saweai	0	5
+wai aki	wainaka	waianaka	0	1
+wai aki	waimisa	wai aka	0	3
+pakei	kani	pakei	0	3
+pakei	kani	pakemai	0	5
+yoi	yoi	yoi	1	0
+poi	koi	poi	0	1
+achi	aboa	achiabo	0	5
+banai	ah	banahon	0	5
+banai	bain	banabai	0	5
+banai	shina	banashina	0	4
+mabain	kani	mabain	0	4
+kiwi	kiwai	kiwa	0	1
+kiwi	kisi	kiwi	0	1
+hohoi	hohoi	hohoa	0	1
+hohoi	hekoinsi	hohoi	0	5
+bi	bia	bia	1	0
+ratei	ratei	ratehekoni	0	5
+ratei	heko	ratehekoi	0	5
+beni	beni	benia	0	1
+paear	paera	paean	0	2
+otsia	otsia	otsina	0	1
+otsia	otsima	otsima	1	0
+nane	nahan	nanehon	0	3
+pichain	pichaini	pichai	0	2
+noia	koinsi	noikoinsi	0	3
+noia	noiaa	noia	0	1
+kenai	kenais	kena	0	2
+bei	bei beia	bea	0	5
+boi	katsi iki	boankatsi iki	0	4
+boi	arana	boanrana	0	3
+boi	kani	bokani	0	2
+moin	moina	moa	0	2
+tewe tewe iki	tewe kai	tewe tewe iki	0	7
+shinain	hekon	shinananpaoni	0	10
+manai	manai	manai	1	0
+tsekai	tsekai	tsekake	0	2
+rani	rani	rania	0	1
+yoishiki	koinsi	yoishika	0	5
+bewa	beware	bewa	0	2
+pian aki	pianakia	pian aka	0	2
+rakai	rakan	rakabotana	0	5
+potai	pakea	potapakea	0	4
+heai	heai	hea	0	1
+mehai	mehika	mehanaka	0	3
+heri heri iki	heri	heri heri iki	0	9
+pari pari iki	parsi	pari	0	1
+imatai	imaisi	imatai	0	2
+inai	inai	inai	1	0
+iná aki	inah	inahon	0	2
+ni	nashina	nishina	0	1
+achimai	achimai	achimai	1	0
+mahkai	keana	mahkakoana	0	6
+neai	neai	nea	0	1
